@@ -1,0 +1,80 @@
+[
+    {
+        "input": "switch to hdmi one",
+        "output": [
+            {
+                "name": "switch_source",
+                "arguments": {
+                    "source": "HDMI1"
+                }
+            }
+        ],
+        "tokens": [
+            "switch",
+            "to",
+            "hd",
+            "##mi",
+            "one"
+        ],
+        "labels": [
+            "B-PRED",
+            "O",
+            "B-OBJ",
+            "I-OBJ",
+            "I-OBJ"
+        ]
+    },
+    {
+        "input": "change input to type c port 2 i need the screen to show the ops computer",
+        "output": [
+            {
+                "name": "switch_source",
+                "arguments": {
+                    "source": "USBC2"
+                }
+            },
+            {
+                "name": "switch_source",
+                "arguments": {
+                    "source": "OPS"
+                }
+            }
+        ],
+        "tokens": [
+            "change",
+            "input",
+            "to",
+            "type",
+            "c",
+            "port",
+            "2",
+            "i",
+            "need",
+            "the",
+            "screen",
+            "to",
+            "show",
+            "the",
+            "ops",
+            "computer"
+        ],
+        "labels": [
+            "B-PRED",
+            "B-OBJ",
+            "O",
+            "B-OBJ",
+            "I-OBJ",
+            "I-OBJ",
+            "I-OBJ",
+            "B-SUB",
+            "B-PRED",
+            "B-OBJ",
+            "I-OBJ",
+            "O",
+            "B-PRED",
+            "B-OBJ",
+            "I-OBJ",
+            "I-OBJ"
+        ]
+    }
+]

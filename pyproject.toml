@@ -1,0 +1,13 @@
+[project]
+name = "multi-task-schedule"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "modelscope>=1.36.3",
+    "openai>=2.34.0",
+    "torch>=2.11.0",
+    "transformers>=5.8.0",
+]

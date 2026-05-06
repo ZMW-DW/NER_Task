@@ -1,0 +1,965 @@
+{"input": "open the whiteboard please", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "start the blackboard app now", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "i need to enter the whiteboard for class", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "launch the drawing board", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "begin writing on the board", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "switch to whiteboard mode", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "get the blackboard ready for teaching", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "lets open up the whiteboard tool", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "time to start the board session", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "activate the interactive whiteboard", "output": {"name": "open_whiteboard", "arguments": {}}}
+{"input": "exit the whiteboard now", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "close the blackboard application", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "shut down the whiteboard please", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "return to desktop from board", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "finish with the whiteboard tool", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "stop using the drawing board", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "i want to exit the board mode", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "close this whiteboard session", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "get back to the main screen", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "quit the interactive board", "output": {"name": "exit_whiteboard", "arguments": {}}}
+{"input": "switch to brush pen", "output": {"name": "switch_pen_type", "arguments": {"type": "brush"}}}
+{"input": "change pen to fountain pen type", "output": {"name": "switch_pen_type", "arguments": {"type": "fountain_pen"}}}
+{"input": "use the marker pen now", "output": {"name": "switch_pen_type", "arguments": {"type": "marker"}}}
+{"input": "select text pen for writing", "output": {"name": "switch_pen_type", "arguments": {"type": "text_pen"}}}
+{"input": "i need the shape pen tool", "output": {"name": "switch_pen_type", "arguments": {"type": "shape_pen"}}}
+{"input": "switch over to laser pen", "output": {"name": "switch_pen_type", "arguments": {"type": "laser_pen"}}}
+{"input": "activate magic pen please", "output": {"name": "switch_pen_type", "arguments": {"type": "magic_pen"}}}
+{"input": "try the ai pen for this", "output": {"name": "switch_pen_type", "arguments": {"type": "ai_pen"}}}
+{"input": "change to fountain pen", "output": {"name": "switch_pen_type", "arguments": {"type": "fountain_pen"}}}
+{"input": "lets use brush for drawing", "output": {"name": "switch_pen_type", "arguments": {"type": "brush"}}}
+{"input": "make the pen thicker to ten", "output": {"name": "set_pen_thickness", "arguments": {"value": 10}}}
+{"input": "set pen thickness to sixteen", "output": {"name": "set_pen_thickness", "arguments": {"value": 16}}}
+{"input": "thinner pen please set to four", "output": {"name": "set_pen_thickness", "arguments": {"value": 4}}}
+{"input": "increase stroke thickness to twelve", "output": {"name": "set_pen_thickness", "arguments": {"value": 12}}}
+{"input": "adjust pen tip size to eight", "output": {"name": "set_pen_thickness", "arguments": {"value": 8}}}
+{"input": "make lines thicker around fourteen", "output": {"name": "set_pen_thickness", "arguments": {"value": 14}}}
+{"input": "set the pen to medium thickness", "output": {"name": "set_pen_thickness", "arguments": {"value": 9}}}
+{"input": "change thickness value to six", "output": {"name": "set_pen_thickness", "arguments": {"value": 6}}}
+{"input": "thicker pen set it to eleven", "output": {"name": "set_pen_thickness", "arguments": {"value": 11}}}
+{"input": "reduce pen size to five", "output": {"name": "set_pen_thickness", "arguments": {"value": 5}}}
+{"input": "set pen color to red", "output": {"name": "set_pen_color", "arguments": {"color": "#FF0000"}}}
+{"input": "change pen to blue with brightness seventy", "output": {"name": "set_pen_color", "arguments": {"color": "#0000FF", "brightness": 70}}}
+{"input": "make the pen green", "output": {"name": "set_pen_color", "arguments": {"color": "#00FF00"}}}
+{"input": "switch pen color to black", "output": {"name": "set_pen_color", "arguments": {"color": "#000000"}}}
+{"input": "use yellow pen at full brightness", "output": {"name": "set_pen_color", "arguments": {"color": "#FFFF00", "brightness": 100}}}
+{"input": "set pen to purple hex code", "output": {"name": "set_pen_color", "arguments": {"color": "#800080"}}}
+{"input": "bright orange pen please", "output": {"name": "set_pen_color", "arguments": {"color": "#FFA500", "brightness": 90}}}
+{"input": "change to dark blue color", "output": {"name": "set_pen_color", "arguments": {"color": "#00008B"}}}
+{"input": "pink pen with lower brightness", "output": {"name": "set_pen_color", "arguments": {"color": "#FFC0CB", "brightness": 60}}}
+{"input": "set pen color to white", "output": {"name": "set_pen_color", "arguments": {"color": "#FFFFFF"}}}
+{"input": "switch to eraser tool", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "activate the eraser now", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "i need to erase something", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "turn on eraser mode", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "use eraser to remove strokes", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "lets erase with the tool", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "change to erase function", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "start erasing please", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "go into eraser", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "eraser on", "output": {"name": "switch_to_eraser", "arguments": {}}}
+{"input": "set eraser size to twenty", "output": {"name": "set_eraser_size", "arguments": {"size": 20}}}
+{"input": "make eraser larger to thirty five", "output": {"name": "set_eraser_size", "arguments": {"size": 35}}}
+{"input": "smaller eraser please set to ten", "output": {"name": "set_eraser_size", "arguments": {"size": 10}}}
+{"input": "increase eraser diameter", "output": {"name": "set_eraser_size", "arguments": {"size": 25}}}
+{"input": "adjust eraser thickness to fifteen", "output": {"name": "set_eraser_size", "arguments": {"size": 15}}}
+{"input": "big eraser mode", "output": {"name": "set_eraser_size", "arguments": {"size": 40}}}
+{"input": "reduce eraser size to eight", "output": {"name": "set_eraser_size", "arguments": {"size": 8}}}
+{"input": "eraser size twenty five", "output": {"name": "set_eraser_size", "arguments": {"size": 25}}}
+{"input": "make the eraser bigger", "output": {"name": "set_eraser_size", "arguments": {"size": 30}}}
+{"input": "set eraser to small size", "output": {"name": "set_eraser_size", "arguments": {"size": 12}}}
+{"input": "clear the entire canvas", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "erase everything on the page", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "wipe the board clean", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "remove all content now", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "start fresh clear screen", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "delete everything from canvas", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "clear this page please", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "reset the drawing area", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "blank out the whiteboard", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "clean slate time", "output": {"name": "clear_canvas", "arguments": {}}}
+{"input": "undo the canvas clear", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "restore after clearing", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "bring back the cleared content", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "reverse the full erase", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "i cleared by mistake undo it", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "recover previous canvas state", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "put back what was cleared", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "undo last clear action", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "restore the board after wipe", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "cancel the canvas clearing", "output": {"name": "undo_clear_canvas", "arguments": {}}}
+{"input": "copy the selected items", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "copy what i have selected", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "duplicate the selection to clipboard", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "lets copy the chosen objects", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "copy selection please", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "send selected to clipboard", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "i want to copy this part", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "copy the highlighted content", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "make a copy of selection", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "clipboard copy now", "output": {"name": "copy_selected", "arguments": {}}}
+{"input": "delete the selected objects", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "remove what is selected", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "erase the chosen items", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "get rid of selection", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "delete highlighted part", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "clear the selected content", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "remove these objects please", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "trash the selection", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "delete selected now", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "remove selection from board", "output": {"name": "delete_selected", "arguments": {}}}
+{"input": "move selected up a layer", "output": {"name": "change_layer", "arguments": {"op": "move_up"}}}
+{"input": "bring the object to front", "output": {"name": "change_layer", "arguments": {"op": "bring_to_front"}}}
+{"input": "send selection to the back", "output": {"name": "change_layer", "arguments": {"op": "send_to_back"}}}
+{"input": "move layer down", "output": {"name": "change_layer", "arguments": {"op": "move_down"}}}
+{"input": "lock the selected item", "output": {"name": "change_layer", "arguments": {"op": "lock"}}}
+{"input": "raise this object higher", "output": {"name": "change_layer", "arguments": {"op": "move_up"}}}
+{"input": "put the shape in front", "output": {"name": "change_layer", "arguments": {"op": "bring_to_front"}}}
+{"input": "lower the layer order", "output": {"name": "change_layer", "arguments": {"op": "move_down"}}}
+{"input": "send to background", "output": {"name": "change_layer", "arguments": {"op": "send_to_back"}}}
+{"input": "lock this element", "output": {"name": "change_layer", "arguments": {"op": "lock"}}}
+{"input": "edit the text content", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "start editing this text", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "modify the written text", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "activate text edit mode", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "lets change the text", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "i need to edit some words", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "open text for editing", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "update the text box", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "edit mode for text", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "fix the handwriting text", "output": {"name": "edit_text_content", "arguments": {}}}
+{"input": "do ocr on the selection", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "recognize the handwritten text", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "convert image to text with ocr", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "extract text from this", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "run ocr recognition now", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "turn handwriting into editable text", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "perform text extraction", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "recognize words in the selection", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "ocr the selected area", "output": {"name": "ocr_recognize", "arguments": {}}}
+{"input": "search for the selected content", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "look up what is selected online", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "web search the highlighted text", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "search this selection", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "find information on selected", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "do an internal search for this", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "query the chosen text", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "search online for selection", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "research the highlighted part", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "lets search the selected words", "output": {"name": "search_selected", "arguments": {}}}
+{"input": "select the circle shape tool", "output": {"name": "select_shape_tool", "arguments": {"shape": "circle"}}}
+{"input": "draw a rectangle with shape tool", "output": {"name": "select_shape_tool", "arguments": {"shape": "rect"}}}
+{"input": "use triangle shape", "output": {"name": "select_shape_tool", "arguments": {"shape": "triangle"}}}
+{"input": "switch to line tool", "output": {"name": "select_shape_tool", "arguments": {"shape": "line"}}}
+{"input": "insert an arrow shape", "output": {"name": "select_shape_tool", "arguments": {"shape": "arrow"}}}
+{"input": "shape tool for square", "output": {"name": "select_shape_tool", "arguments": {"shape": "rect"}}}
+{"input": "draw circles please", "output": {"name": "select_shape_tool", "arguments": {"shape": "circle"}}}
+{"input": "activate arrow drawing", "output": {"name": "select_shape_tool", "arguments": {"shape": "arrow"}}}
+{"input": "select the line shape", "output": {"name": "select_shape_tool", "arguments": {"shape": "line"}}}
+{"input": "triangle shape tool on", "output": {"name": "select_shape_tool", "arguments": {"shape": "triangle"}}}
+{"input": "set shape stroke width to five", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 5}}}
+{"input": "make shape border thicker to eight", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 8}}}
+{"input": "adjust border thickness to three", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 3}}}
+{"input": "increase stroke for shapes to ten", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 10}}}
+{"input": "thinner border set to four", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 4}}}
+{"input": "shape outline width seven", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 7}}}
+{"input": "set stroke to six", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 6}}}
+{"input": "thicker shape edges please", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 9}}}
+{"input": "reduce shape border to two", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 2}}}
+{"input": "border thickness twelve", "output": {"name": "set_shape_stroke_width", "arguments": {"value": 12}}}
+{"input": "set shape color to blue", "output": {"name": "set_shape_color", "arguments": {"color": "#0000FF"}}}
+{"input": "change shape fill to red with brightness eighty", "output": {"name": "set_shape_color", "arguments": {"color": "#FF0000", "brightness": 80}}}
+{"input": "make shapes green", "output": {"name": "set_shape_color", "arguments": {"color": "#00FF00"}}}
+{"input": "yellow border for shapes", "output": {"name": "set_shape_color", "arguments": {"color": "#FFFF00"}}}
+{"input": "purple shape color please", "output": {"name": "set_shape_color", "arguments": {"color": "#800080", "brightness": 90}}}
+{"input": "set selected shape to black", "output": {"name": "set_shape_color", "arguments": {"color": "#000000"}}}
+{"input": "bright orange for the shape", "output": {"name": "set_shape_color", "arguments": {"color": "#FFA500"}}}
+{"input": "dark blue shape fill", "output": {"name": "set_shape_color", "arguments": {"color": "#00008B"}}}
+{"input": "pink color for shapes", "output": {"name": "set_shape_color", "arguments": {"color": "#FFC0CB"}}}
+{"input": "insert this image file", "output": {"name": "insert_image", "arguments": {"files": ["/path/to/image1.jpg"]}}}
+{"input": "add these two pictures to board", "output": {"name": "insert_image", "arguments": {"files": ["/images/pic1.png", "/images/pic2.jpg"]}}}
+{"input": "paste the photo from local", "output": {"name": "insert_image", "arguments": {"files": ["/home/photos/class.jpg"]}}}
+{"input": "insert multiple images now", "output": {"name": "insert_image", "arguments": {"files": ["/img/a.png", "/img/b.png", "/img/c.png"]}}}
+{"input": "bring in the diagram image", "output": {"name": "insert_image", "arguments": {"files": ["/diagrams/chart.png"]}}}
+{"input": "load image from this path", "output": {"name": "insert_image", "arguments": {"files": ["/storage/photo.jpg"]}}}
+{"input": "add picture to whiteboard", "output": {"name": "insert_image", "arguments": {"files": ["/classroom/image1.jpeg"]}}}
+{"input": "insert ten images maximum", "output": {"name": "insert_image", "arguments": {"files": ["/1.jpg", "/2.jpg", "/3.jpg"]}}}
+{"input": "place this screenshot on board", "output": {"name": "insert_image", "arguments": {"files": ["/screenshots/screen.png"]}}}
+{"input": "upload images from folder", "output": {"name": "insert_image", "arguments": {"files": ["/folder/img.png"]}}}
+{"input": "insert a table with four rows and six columns", "output": {"name": "insert_table", "arguments": {"rows": 4, "cols": 6}}}
+{"input": "add table three by five", "output": {"name": "insert_table", "arguments": {"rows": 3, "cols": 5}}}
+{"input": "create table with two rows eight columns", "output": {"name": "insert_table", "arguments": {"rows": 2, "cols": 8}}}
+{"input": "new table one row twelve columns", "output": {"name": "insert_table", "arguments": {"rows": 1, "cols": 12}}}
+{"input": "insert table five rows four columns", "output": {"name": "insert_table", "arguments": {"rows": 5, "cols": 4}}}
+{"input": "make a table eight rows by three", "output": {"name": "insert_table", "arguments": {"rows": 8, "cols": 3}}}
+{"input": "add six by seven table", "output": {"name": "insert_table", "arguments": {"rows": 6, "cols": 7}}}
+{"input": "table with seven rows and ten columns", "output": {"name": "insert_table", "arguments": {"rows": 7, "cols": 10}}}
+{"input": "insert four row five column table", "output": {"name": "insert_table", "arguments": {"rows": 4, "cols": 5}}}
+{"input": "create a small table two by four", "output": {"name": "insert_table", "arguments": {"rows": 2, "cols": 4}}}
+{"input": "insert the pdf file from path", "output": {"name": "insert_pdf", "arguments": {"file": "/documents/lesson.pdf"}}}
+{"input": "load this pdf into whiteboard", "output": {"name": "insert_pdf", "arguments": {"file": "/class/materials.pdf"}}}
+{"input": "import pdf document now", "output": {"name": "insert_pdf", "arguments": {"file": "/home/work/worksheet.pdf"}}}
+{"input": "bring in the pdf from storage", "output": {"name": "insert_pdf", "arguments": {"file": "/pdfs/notes.pdf"}}}
+{"input": "add pdf file to the board", "output": {"name": "insert_pdf", "arguments": {"file": "/teaching/slides.pdf"}}}
+{"input": "insert pdf at this location", "output": {"name": "insert_pdf", "arguments": {"file": "/files/chapter1.pdf"}}}
+{"input": "open the pdf in whiteboard", "output": {"name": "insert_pdf", "arguments": {"file": "/docs/test.pdf"}}}
+{"input": "import my pdf lesson plan", "output": {"name": "insert_pdf", "arguments": {"file": "/plans/plan.pdf"}}}
+{"input": "load pdf from downloads", "output": {"name": "insert_pdf", "arguments": {"file": "/downloads/reading.pdf"}}}
+{"input": "insert this video file", "output": {"name": "insert_video", "arguments": {"file": "/videos/demo.mp4"}}}
+{"input": "add the video to board", "output": {"name": "insert_video", "arguments": {"file": "/classroom/lecture.mp4"}}}
+{"input": "play video from local path", "output": {"name": "insert_video", "arguments": {"file": "/media/explain.mp4"}}}
+{"input": "import video clip", "output": {"name": "insert_video", "arguments": {"file": "/videos/short.mp4"}}}
+{"input": "insert this teaching video", "output": {"name": "insert_video", "arguments": {"file": "/assets/video1.mov"}}}
+{"input": "load the recorded video", "output": {"name": "insert_video", "arguments": {"file": "/recordings/class.mp4"}}}
+{"input": "put video on the whiteboard", "output": {"name": "insert_video", "arguments": {"file": "/files/intro.mp4"}}}
+{"input": "add video from path", "output": {"name": "insert_video", "arguments": {"file": "/home/videos/help.mp4"}}}
+{"input": "insert video lesson", "output": {"name": "insert_video", "arguments": {"file": "/lessons/video.mp4"}}}
+{"input": "bring in the video file", "output": {"name": "insert_video", "arguments": {"file": "/storage/clip.mp4"}}}
+{"input": "insert a new mind map", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "add mind map to the canvas", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "create mindmap tool", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "start a mind map", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "open mind mapping", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "lets make a mind map", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "insert mind map now", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "add brain map structure", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "new mind map please", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "activate mind map feature", "output": {"name": "insert_mind_map", "arguments": {}}}
+{"input": "insert a sticky note", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "add sticky note to board", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "place a post it note", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "new sticky note please", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "create sticky for reminders", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "insert yellow sticky", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "add note sticker", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "sticky note tool on", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "lets use a sticky note", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "put up a sticky", "output": {"name": "insert_sticky", "arguments": {}}}
+{"input": "insert four line grid", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "add four line notebook paper", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "english practice lines please", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "four line grid for writing", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "insert pinyin grid", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "add ruled lines for handwriting", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "four line template on board", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "practice grid four lines", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "insert the four line sheet", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "bring up four line paper", "output": {"name": "insert_four_line_grid", "arguments": {}}}
+{"input": "insert the straight ruler", "output": {"name": "insert_ruler", "arguments": {"type": "straight"}}}
+{"input": "add triangle tool", "output": {"name": "insert_ruler", "arguments": {"type": "triangle"}}}
+{"input": "use isosceles right triangle", "output": {"name": "insert_ruler", "arguments": {"type": "isosceles_right_triangle"}}}
+{"input": "protractor on the board", "output": {"name": "insert_ruler", "arguments": {"type": "protractor"}}}
+{"input": "insert compass tool", "output": {"name": "insert_ruler", "arguments": {"type": "compass"}}}
+{"input": "add geometry ruler", "output": {"name": "insert_ruler", "arguments": {"type": "straight"}}}
+{"input": "triangle square ruler", "output": {"name": "insert_ruler", "arguments": {"type": "triangle"}}}
+{"input": "put protractor up", "output": {"name": "insert_ruler", "arguments": {"type": "protractor"}}}
+{"input": "math tools compass", "output": {"name": "insert_ruler", "arguments": {"type": "compass"}}}
+{"input": "right triangle insert", "output": {"name": "insert_ruler", "arguments": {"type": "isosceles_right_triangle"}}}
+{"input": "open stopwatch timer", "output": {"name": "open_timer", "arguments": {"mode": "stopwatch"}}}
+{"input": "start countdown for ten minutes", "output": {"name": "open_timer", "arguments": {"mode": "countdown", "minutes": 10}}}
+{"input": "timer mode countdown one hour", "output": {"name": "open_timer", "arguments": {"mode": "countdown", "hours": 1}}}
+{"input": "stopwatch please", "output": {"name": "open_timer", "arguments": {"mode": "stopwatch"}}}
+{"input": "countdown thirty seconds", "output": {"name": "open_timer", "arguments": {"mode": "countdown", "seconds": 30}}}
+{"input": "open timer with five minutes", "output": {"name": "open_timer", "arguments": {"mode": "countdown", "minutes": 5}}}
+{"input": "set countdown to two hours", "output": {"name": "open_timer", "arguments": {"mode": "countdown", "hours": 2}}}
+{"input": "start the stopwatch tool", "output": {"name": "open_timer", "arguments": {"mode": "stopwatch"}}}
+{"input": "timer for three minutes thirty seconds", "output": {"name": "open_timer", "arguments": {"mode": "countdown", "minutes": 3, "seconds": 30}}}
+{"input": "countdown one minute", "output": {"name": "open_timer", "arguments": {"mode": "countdown", "minutes": 1}}}
+{"input": "search the web for photosynthesis", "output": {"name": "open_web_search", "arguments": {"query": "photosynthesis"}}}
+{"input": "internal search for math formulas", "output": {"name": "open_web_search", "arguments": {"query": "quadratic formula"}}}
+{"input": "look up history of rome", "output": {"name": "open_web_search", "arguments": {"query": "history of rome"}}}
+{"input": "web search world capitals", "output": {"name": "open_web_search", "arguments": {"query": "world capitals"}}}
+{"input": "search for lesson plan ideas", "output": {"name": "open_web_search", "arguments": {"query": "interactive lesson plans"}}}
+{"input": "find information on gravity", "output": {"name": "open_web_search", "arguments": {"query": "gravity explanation"}}}
+{"input": "open search for climate change", "output": {"name": "open_web_search", "arguments": {"query": "climate change facts"}}}
+{"input": "query the internet for examples", "output": {"name": "open_web_search", "arguments": {"query": "english grammar examples"}}}
+{"input": "search baidu or google for this", "output": {"name": "open_web_search", "arguments": {"query": "periodic table elements"}}}
+{"input": "web search tool for fractions", "output": {"name": "open_web_search", "arguments": {"query": "teaching fractions"}}}
+{"input": "open the formula tool", "output": {"name": "open_subject_tool", "arguments": {"category": "formula"}}}
+{"input": "use the function subject tool", "output": {"name": "open_subject_tool", "arguments": {"category": "function"}}}
+{"input": "sticker category please", "output": {"name": "open_subject_tool", "arguments": {"category": "sticker"}}}
+{"input": "subject tool for web", "output": {"name": "open_subject_tool", "arguments": {"category": "web"}}}
+{"input": "open formula helper", "output": {"name": "open_subject_tool", "arguments": {"category": "formula"}}}
+{"input": "access function tool", "output": {"name": "open_subject_tool", "arguments": {"category": "function"}}}
+{"input": "show me stickers", "output": {"name": "open_subject_tool", "arguments": {"category": "sticker"}}}
+{"input": "subject tools web search", "output": {"name": "open_subject_tool", "arguments": {"category": "web"}}}
+{"input": "activate formula category", "output": {"name": "open_subject_tool", "arguments": {"category": "formula"}}}
+{"input": "stickers from subject tool", "output": {"name": "open_subject_tool", "arguments": {"category": "sticker"}}}
+{"input": "create new canvas page", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "add a blank page", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "new page for whiteboard", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "start fresh page", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "insert another canvas", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "next blank page please", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "add new sheet", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "make a new board page", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "open additional page", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "create page two", "output": {"name": "new_canvas_page", "arguments": {}}}
+{"input": "go to previous page", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "previous canvas page", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "back one page", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "switch to last page", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "move to the prior page", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "go back a page", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "previous sheet please", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "turn to earlier page", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "last page navigation", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "return to page before", "output": {"name": "prev_page", "arguments": {}}}
+{"input": "go to next page", "output": {"name": "next_page", "arguments": {}}}
+{"input": "next canvas please", "output": {"name": "next_page", "arguments": {}}}
+{"input": "forward to following page", "output": {"name": "next_page", "arguments": {}}}
+{"input": "advance one page", "output": {"name": "next_page", "arguments": {}}}
+{"input": "move to the next sheet", "output": {"name": "next_page", "arguments": {}}}
+{"input": "skip to next board page", "output": {"name": "next_page", "arguments": {}}}
+{"input": "turn page forward", "output": {"name": "next_page", "arguments": {}}}
+{"input": "next page now", "output": {"name": "next_page", "arguments": {}}}
+{"input": "proceed to subsequent page", "output": {"name": "next_page", "arguments": {}}}
+{"input": "jump to page three", "output": {"name": "goto_page", "arguments": {"index": 3}}}
+{"input": "go to page number five", "output": {"name": "goto_page", "arguments": {"index": 5}}}
+{"input": "switch to the tenth page", "output": {"name": "goto_page", "arguments": {"index": 10}}}
+{"input": "navigate to page one", "output": {"name": "goto_page", "arguments": {"index": 1}}}
+{"input": "open page seven", "output": {"name": "goto_page", "arguments": {"index": 7}}}
+{"input": "jump directly to page four", "output": {"name": "goto_page", "arguments": {"index": 4}}}
+{"input": "go to the second page", "output": {"name": "goto_page", "arguments": {"index": 2}}}
+{"input": "page eight please", "output": {"name": "goto_page", "arguments": {"index": 8}}}
+{"input": "select page six", "output": {"name": "goto_page", "arguments": {"index": 6}}}
+{"input": "go straight to page nine", "output": {"name": "goto_page", "arguments": {"index": 9}}}
+{"input": "delete page number two", "output": {"name": "delete_page", "arguments": {"index": 2}}}
+{"input": "remove the fifth page", "output": {"name": "delete_page", "arguments": {"index": 5}}}
+{"input": "delete current page three", "output": {"name": "delete_page", "arguments": {"index": 3}}}
+{"input": "erase page one from file", "output": {"name": "delete_page", "arguments": {"index": 1}}}
+{"input": "get rid of page seven", "output": {"name": "delete_page", "arguments": {"index": 7}}}
+{"input": "remove page four", "output": {"name": "delete_page", "arguments": {"index": 4}}}
+{"input": "delete the last page", "output": {"name": "delete_page", "arguments": {"index": 10}}}
+{"input": "remove page six please", "output": {"name": "delete_page", "arguments": {"index": 6}}}
+{"input": "delete page eight", "output": {"name": "delete_page", "arguments": {"index": 8}}}
+{"input": "trash page nine", "output": {"name": "delete_page", "arguments": {"index": 9}}}
+{"input": "enable split screen with two", "output": {"name": "enable_split_screen", "arguments": {"count": 2}}}
+{"input": "split into three screens", "output": {"name": "enable_split_screen", "arguments": {"count": 3}}}
+{"input": "activate four way split", "output": {"name": "enable_split_screen", "arguments": {"count": 4}}}
+{"input": "split screen mode two parts", "output": {"name": "enable_split_screen", "arguments": {"count": 2}}}
+{"input": "turn on three division view", "output": {"name": "enable_split_screen", "arguments": {"count": 3}}}
+{"input": "four split screen please", "output": {"name": "enable_split_screen", "arguments": {"count": 4}}}
+{"input": "enable split with count three", "output": {"name": "enable_split_screen", "arguments": {"count": 3}}}
+{"input": "divide screen into two", "output": {"name": "enable_split_screen", "arguments": {"count": 2}}}
+{"input": "split the display four ways", "output": {"name": "enable_split_screen", "arguments": {"count": 4}}}
+{"input": "use split screen three", "output": {"name": "enable_split_screen", "arguments": {"count": 3}}}
+{"input": "disable split screen", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "turn off split view", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "exit split screen mode", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "close the multiple screens", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "return to single screen", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "stop split screen", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "disable divided display", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "single screen only please", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "remove split", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "end split screen", "output": {"name": "disable_split_screen", "arguments": {}}}
+{"input": "open the page list view", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "show page thumbnails", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "view all pages preview", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "open page navigator", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "display page list", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "see thumbnails of pages", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "list all canvas pages", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "open overview of pages", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "page list tool", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "show me the pages", "output": {"name": "open_page_list", "arguments": {}}}
+{"input": "save the current file as source", "output": {"name": "save_file", "arguments": {"name": "lesson1", "format": "source"}}}
+{"input": "save as pdf format", "output": {"name": "save_file", "arguments": {"name": "notes", "format": "pdf"}}}
+{"input": "save whiteboard as image", "output": {"name": "save_file", "arguments": {"name": "diagram", "format": "image"}}}
+{"input": "save file to desktop in pdf", "output": {"name": "save_file", "arguments": {"name": "classwork", "format": "pdf", "location": "/desktop"}}}
+{"input": "export current as source", "output": {"name": "save_file", "arguments": {"name": "project", "format": "source"}}}
+{"input": "save the board image", "output": {"name": "save_file", "arguments": {"name": "capture", "format": "image"}}}
+{"input": "save to documents as pdf", "output": {"name": "save_file", "arguments": {"name": "summary", "format": "pdf", "location": "/documents"}}}
+{"input": "quick save native format", "output": {"name": "save_file", "arguments": {"name": "today", "format": "source"}}}
+{"input": "save as png image", "output": {"name": "save_file", "arguments": {"name": "boardshot", "format": "image"}}}
+{"input": "save lesson in source", "output": {"name": "save_file", "arguments": {"name": "lesson", "format": "source"}}}
+{"input": "save as new file called mylesson in pdf", "output": {"name": "save_file_as", "arguments": {"name": "mylesson", "format": "pdf"}}}
+{"input": "save as image named drawing", "output": {"name": "save_file_as", "arguments": {"name": "drawing", "format": "image"}}}
+{"input": "export to source format as backup", "output": {"name": "save_file_as", "arguments": {"name": "backup", "format": "source"}}}
+{"input": "save as pdf to downloads folder", "output": {"name": "save_file_as", "arguments": {"name": "exported", "format": "pdf", "location": "/downloads"}}}
+{"input": "new name final version image", "output": {"name": "save_file_as", "arguments": {"name": "final", "format": "image"}}}
+{"input": "save as with name test in source", "output": {"name": "save_file_as", "arguments": {"name": "test", "format": "source"}}}
+{"input": "save copy as pdf", "output": {"name": "save_file_as", "arguments": {"name": "copy1", "format": "pdf"}}}
+{"input": "as image save it", "output": {"name": "save_file_as", "arguments": {"name": "snapshot", "format": "image"}}}
+{"input": "save as native file newname", "output": {"name": "save_file_as", "arguments": {"name": "newname", "format": "source"}}}
+{"input": "save as pdf named report", "output": {"name": "save_file_as", "arguments": {"name": "report", "format": "pdf"}}}
+{"input": "open whiteboard file from this path", "output": {"name": "open_file", "arguments": {"path": "/files/board.wb"}}}
+{"input": "load the saved project", "output": {"name": "open_file", "arguments": {"path": "/projects/lesson.wb"}}}
+{"input": "open file at documents", "output": {"name": "open_file", "arguments": {"path": "/documents/class.wb"}}}
+{"input": "load previous whiteboard", "output": {"name": "open_file", "arguments": {"path": "/archive/old.wb"}}}
+{"input": "open my saved board", "output": {"name": "open_file", "arguments": {"path": "/home/saved/session.wb"}}}
+{"input": "bring up the file from path", "output": {"name": "open_file", "arguments": {"path": "/storage/work.wb"}}}
+{"input": "open whiteboard document", "output": {"name": "open_file", "arguments": {"path": "/teaching/day1.wb"}}}
+{"input": "load this specific file", "output": {"name": "open_file", "arguments": {"path": "/tmp/temp.wb"}}}
+{"input": "restore from saved location", "output": {"name": "open_file", "arguments": {"path": "/backups/backup.wb"}}}
+{"input": "open the demo board", "output": {"name": "open_file", "arguments": {"path": "/examples/demo.wb"}}}
+{"input": "new blank whiteboard file", "output": {"name": "new_file", "arguments": {}}}
+{"input": "start a fresh file", "output": {"name": "new_file", "arguments": {}}}
+{"input": "create new whiteboard", "output": {"name": "new_file", "arguments": {}}}
+{"input": "begin new project", "output": {"name": "new_file", "arguments": {}}}
+{"input": "clear and new file", "output": {"name": "new_file", "arguments": {}}}
+{"input": "open fresh canvas file", "output": {"name": "new_file", "arguments": {}}}
+{"input": "new session file", "output": {"name": "new_file", "arguments": {}}}
+{"input": "reset to new board file", "output": {"name": "new_file", "arguments": {}}}
+{"input": "start over with new file", "output": {"name": "new_file", "arguments": {}}}
+{"input": "create empty whiteboard", "output": {"name": "new_file", "arguments": {}}}
+{"input": "send by email to teacher at example dot com in pdf", "output": {"name": "send_by_email", "arguments": {"to": ["teacher@example.com"], "format": "pdf"}}}
+{"input": "email the board as image to student one", "output": {"name": "send_by_email", "arguments": {"to": ["student1@school.edu"], "format": "image", "subject": "class notes"}}}
+{"input": "share via email source format to parents", "output": {"name": "send_by_email", "arguments": {"to": ["parent1@email.com", "parent2@email.com"], "format": "source"}}}
+{"input": "send pdf to my address", "output": {"name": "send_by_email", "arguments": {"to": ["me@work.com"], "format": "pdf", "body": "here is the lesson"}}}
+{"input": "email image version", "output": {"name": "send_by_email", "arguments": {"to": ["colleague@school.org"], "format": "image"}}}
+{"input": "send source file by email", "output": {"name": "send_by_email", "arguments": {"to": ["admin@edu"], "format": "source", "subject": "whiteboard file"}}}
+{"input": "email the content as pdf", "output": {"name": "send_by_email", "arguments": {"to": ["group@list.com"], "format": "pdf"}}}
+{"input": "share via mail in image", "output": {"name": "send_by_email", "arguments": {"to": ["friend@example.net"], "format": "image"}}}
+{"input": "send to multiple with source", "output": {"name": "send_by_email", "arguments": {"to": ["a@one.com", "b@two.com"], "format": "source"}}}
+{"input": "email pdf with notes", "output": {"name": "send_by_email", "arguments": {"to": ["notes@school.com"], "format": "pdf", "subject": "daily notes"}}}
+{"input": "open encrypted qr code share", "output": {"name": "open_share_qrcode", "arguments": {"type": "encrypted"}}}
+{"input": "share with lan qr code", "output": {"name": "open_share_qrcode", "arguments": {"type": "lan"}}}
+{"input": "generate qr for encrypted sharing", "output": {"name": "open_share_qrcode", "arguments": {"type": "encrypted", "remove_blank_pages": true}}}
+{"input": "lan share without blank pages", "output": {"name": "open_share_qrcode", "arguments": {"type": "lan", "remove_blank_pages": false}}}
+{"input": "qr code share encrypted", "output": {"name": "open_share_qrcode", "arguments": {"type": "encrypted"}}}
+{"input": "share locally with qr", "output": {"name": "open_share_qrcode", "arguments": {"type": "lan"}}}
+{"input": "open qr sharing tool encrypted", "output": {"name": "open_share_qrcode", "arguments": {"type": "encrypted"}}}
+{"input": "lan qr code option", "output": {"name": "open_share_qrcode", "arguments": {"type": "lan", "remove_blank_pages": true}}}
+{"input": "share via qr code", "output": {"name": "open_share_qrcode", "arguments": {"type": "encrypted"}}}
+{"input": "qr share remove blanks", "output": {"name": "open_share_qrcode", "arguments": {"type": "lan", "remove_blank_pages": true}}}
+{"input": "turn on palm rejection", "output": {"name": "set_palm_rejection", "arguments": {"on": true}}}
+{"input": "enable palm rejection now", "output": {"name": "set_palm_rejection", "arguments": {"on": true}}}
+{"input": "disable palm ignore", "output": {"name": "set_palm_rejection", "arguments": {"on": false}}}
+{"input": "palm rejection off", "output": {"name": "set_palm_rejection", "arguments": {"on": false}}}
+{"input": "activate palm rejection", "output": {"name": "set_palm_rejection", "arguments": {"on": true}}}
+{"input": "stop ignoring palm touches", "output": {"name": "set_palm_rejection", "arguments": {"on": false}}}
+{"input": "turn palm rejection on", "output": {"name": "set_palm_rejection", "arguments": {"on": true}}}
+{"input": "palm rejection switch false", "output": {"name": "set_palm_rejection", "arguments": {"on": false}}}
+{"input": "enable it for palm", "output": {"name": "set_palm_rejection", "arguments": {"on": true}}}
+{"input": "no more palm rejection", "output": {"name": "set_palm_rejection", "arguments": {"on": false}}}
+{"input": "enable single finger in control mode", "output": {"name": "set_single_finger_select", "arguments": {"on": true, "mode": "control"}}}
+{"input": "single finger write mode on", "output": {"name": "set_single_finger_select", "arguments": {"on": true, "mode": "write"}}}
+{"input": "turn off single finger select", "output": {"name": "set_single_finger_select", "arguments": {"on": false}}}
+{"input": "single finger control please", "output": {"name": "set_single_finger_select", "arguments": {"on": true, "mode": "control"}}}
+{"input": "disable single finger", "output": {"name": "set_single_finger_select", "arguments": {"on": false}}}
+{"input": "set single finger to write", "output": {"name": "set_single_finger_select", "arguments": {"on": true, "mode": "write"}}}
+{"input": "activate single finger control", "output": {"name": "set_single_finger_select", "arguments": {"on": true, "mode": "control"}}}
+{"input": "single finger mode off", "output": {"name": "set_single_finger_select", "arguments": {"on": false}}}
+{"input": "use single finger for writing", "output": {"name": "set_single_finger_select", "arguments": {"on": true, "mode": "write"}}}
+{"input": "control with one finger", "output": {"name": "set_single_finger_select", "arguments": {"on": true, "mode": "control"}}}
+{"input": "show the time on board", "output": {"name": "set_show_time", "arguments": {"on": true}}}
+{"input": "display clock", "output": {"name": "set_show_time", "arguments": {"on": true}}}
+{"input": "hide the clock", "output": {"name": "set_show_time", "arguments": {"on": false}}}
+{"input": "turn off time display", "output": {"name": "set_show_time", "arguments": {"on": false}}}
+{"input": "enable showing time", "output": {"name": "set_show_time", "arguments": {"on": true}}}
+{"input": "no clock on whiteboard", "output": {"name": "set_show_time", "arguments": {"on": false}}}
+{"input": "show current time", "output": {"name": "set_show_time", "arguments": {"on": true}}}
+{"input": "clock visibility off", "output": {"name": "set_show_time", "arguments": {"on": false}}}
+{"input": "add time to screen", "output": {"name": "set_show_time", "arguments": {"on": true}}}
+{"input": "remove time display", "output": {"name": "set_show_time", "arguments": {"on": false}}}
+{"input": "enable pressure sensitivity", "output": {"name": "set_pressure_sensitive", "arguments": {"on": true}}}
+{"input": "turn on pen pressure", "output": {"name": "set_pressure_sensitive", "arguments": {"on": true}}}
+{"input": "disable pressure sensitive", "output": {"name": "set_pressure_sensitive", "arguments": {"on": false}}}
+{"input": "pressure sensitivity off", "output": {"name": "set_pressure_sensitive", "arguments": {"on": false}}}
+{"input": "activate pressure for pen", "output": {"name": "set_pressure_sensitive", "arguments": {"on": true}}}
+{"input": "no pressure response", "output": {"name": "set_pressure_sensitive", "arguments": {"on": false}}}
+{"input": "pressure on", "output": {"name": "set_pressure_sensitive", "arguments": {"on": true}}}
+{"input": "turn pressure sensitivity false", "output": {"name": "set_pressure_sensitive", "arguments": {"on": false}}}
+{"input": "make pen pressure sensitive", "output": {"name": "set_pressure_sensitive", "arguments": {"on": true}}}
+{"input": "disable pen pressure", "output": {"name": "set_pressure_sensitive", "arguments": {"on": false}}}
+{"input": "set background color to light blue", "output": {"name": "set_background", "arguments": {"color": "#ADD8E6"}}}
+{"input": "change background to grid", "output": {"name": "set_background", "arguments": {"grid": "grid"}}}
+{"input": "use image as background from path", "output": {"name": "set_background", "arguments": {"image": "/backgrounds/wall.jpg"}}}
+{"input": "white background please", "output": {"name": "set_background", "arguments": {"color": "#FFFFFF"}}}
+{"input": "set dark background", "output": {"name": "set_background", "arguments": {"color": "#333333"}}}
+{"input": "background with dots", "output": {"name": "set_background", "arguments": {"grid": "dots"}}}
+{"input": "custom image background", "output": {"name": "set_background", "arguments": {"image": "/imgs/bg.png"}}}
+{"input": "plain color background green", "output": {"name": "set_background", "arguments": {"color": "#008000"}}}
+{"input": "set grid background", "output": {"name": "set_background", "arguments": {"grid": "lines"}}}
+{"input": "change wallpaper to photo", "output": {"name": "set_background", "arguments": {"image": "/photos/classbg.jpg"}}}
+{"input": "enable fine erase mode", "output": {"name": "set_fine_erase", "arguments": {"on": true}}}
+{"input": "turn on precise erasure", "output": {"name": "set_fine_erase", "arguments": {"on": true}}}
+{"input": "disable fine erase", "output": {"name": "set_fine_erase", "arguments": {"on": false}}}
+{"input": "fine erase off", "output": {"name": "set_fine_erase", "arguments": {"on": false}}}
+{"input": "activate fine eraser", "output": {"name": "set_fine_erase", "arguments": {"on": true}}}
+{"input": "no fine erase please", "output": {"name": "set_fine_erase", "arguments": {"on": false}}}
+{"input": "precise erase on", "output": {"name": "set_fine_erase", "arguments": {"on": true}}}
+{"input": "turn fine erase false", "output": {"name": "set_fine_erase", "arguments": {"on": false}}}
+{"input": "use fine erase tool", "output": {"name": "set_fine_erase", "arguments": {"on": true}}}
+{"input": "standard erase mode", "output": {"name": "set_fine_erase", "arguments": {"on": false}}}
+{"input": "enable rotating eraser", "output": {"name": "set_rotate_eraser", "arguments": {"on": true}}}
+{"input": "turn on rotate eraser", "output": {"name": "set_rotate_eraser", "arguments": {"on": true}}}
+{"input": "disable rotating erase", "output": {"name": "set_rotate_eraser", "arguments": {"on": false}}}
+{"input": "rotating eraser off", "output": {"name": "set_rotate_eraser", "arguments": {"on": false}}}
+{"input": "activate rotation for eraser", "output": {"name": "set_rotate_eraser", "arguments": {"on": true}}}
+{"input": "no rotation on eraser", "output": {"name": "set_rotate_eraser", "arguments": {"on": false}}}
+{"input": "rotating eraser mode", "output": {"name": "set_rotate_eraser", "arguments": {"on": true}}}
+{"input": "turn rotate eraser false", "output": {"name": "set_rotate_eraser", "arguments": {"on": false}}}
+{"input": "enable eraser rotation", "output": {"name": "set_rotate_eraser", "arguments": {"on": true}}}
+{"input": "standard eraser without rotation", "output": {"name": "set_rotate_eraser", "arguments": {"on": false}}}
+{"input": "undo last action", "output": {"name": "undo", "arguments": {}}}
+{"input": "undo that", "output": {"name": "undo", "arguments": {}}}
+{"input": "go back one step", "output": {"name": "undo", "arguments": {}}}
+{"input": "revert the previous change", "output": {"name": "undo", "arguments": {}}}
+{"input": "ctrl z basically", "output": {"name": "undo", "arguments": {}}}
+{"input": "undo please", "output": {"name": "undo", "arguments": {}}}
+{"input": "reverse last move", "output": {"name": "undo", "arguments": {}}}
+{"input": "take back the action", "output": {"name": "undo", "arguments": {}}}
+{"input": "undo the drawing", "output": {"name": "undo", "arguments": {}}}
+{"input": "step back", "output": {"name": "undo", "arguments": {}}}
+{"input": "redo the last undo", "output": {"name": "redo", "arguments": {}}}
+{"input": "redo action", "output": {"name": "redo", "arguments": {}}}
+{"input": "restore what was undone", "output": {"name": "redo", "arguments": {}}}
+{"input": "forward again", "output": {"name": "redo", "arguments": {}}}
+{"input": "redo please", "output": {"name": "redo", "arguments": {}}}
+{"input": "bring back the change", "output": {"name": "redo", "arguments": {}}}
+{"input": "redo the previous", "output": {"name": "redo", "arguments": {}}}
+{"input": "un do the undo", "output": {"name": "redo", "arguments": {}}}
+{"input": "repeat last action", "output": {"name": "redo", "arguments": {}}}
+{"input": "redo step", "output": {"name": "redo", "arguments": {}}}
+{"input": "slide toolbar to the left", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "left"}}}
+{"input": "switch menu right", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "right"}}}
+{"input": "toolbar slide left", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "left"}}}
+{"input": "move the menu to right", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "right"}}}
+{"input": "slide toolbar direction left", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "left"}}}
+{"input": "right side toolbar", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "right"}}}
+{"input": "switch the toolbar left", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "left"}}}
+{"input": "slide right please", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "right"}}}
+{"input": "toolbar to the left", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "left"}}}
+{"input": "change toolbar side right", "output": {"name": "switch_toolbar_menu", "arguments": {"direction": "right"}}}
+{"input": "take a screenshot of the board", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "capture current page", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "save screenshot now", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "snapshot the whiteboard", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "screenshot tool", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "capture the canvas", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "save image of page", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "board screenshot", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "take picture of current view", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "grab screenshot", "output": {"name": "screenshot_and_save", "arguments": {}}}
+{"input": "open aerial view", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "bird eye view of canvas", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "global overview please", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "show thumbnails overview", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "aerial view mode", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "open the big picture view", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "canvas overview", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "birdseye the board", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "full view of all pages", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "switch to aerial", "output": {"name": "open_aerial_view", "arguments": {}}}
+{"input": "switch the interface layout", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "change layout mode", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "modify the arrangement", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "new layout please", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "switch ui layout", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "rearrange the interface", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "change board layout", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "update the screen arrangement", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "different layout now", "output": {"name": "switch_layout", "arguments": {}}}
+{"input": "layout switch", "output": {"name": "switch_layout", "arguments": {}}}
+
+
+{"input": "switch to android source", "output": {"name": "switch_source", "arguments": {"source": "ANDROID"}}}
+{"input": "please change the input to ops computer", "output": {"name": "switch_source", "arguments": {"source": "OPS"}}}
+{"input": "go to hdmi one now", "output": {"name": "switch_source", "arguments": {"source": "HDMI1"}}}
+{"input": "switch the screen to type c two", "output": {"name": "switch_source", "arguments": {"source": "USBC2"}}}
+{"input": "i need to use displayport three", "output": {"name": "switch_source", "arguments": {"source": "DP3"}}}
+{"input": "change source to vga", "output": {"name": "switch_source", "arguments": {"source": "VGA1"}}}
+{"input": "lets use the front hdmi two", "output": {"name": "switch_source", "arguments": {"source": "F_HDMI2"}}}
+{"input": "switch over to ops two slot", "output": {"name": "switch_source", "arguments": {"source": "OPS2"}}}
+{"input": "connect to hdmi four please", "output": {"name": "switch_source", "arguments": {"source": "HDMI4"}}}
+{"input": "put it on the rear type c one", "output": {"name": "switch_source", "arguments": {"source": "USBC1"}}}
+{"input": "switch source by index thirty five", "output": {"name": "switch_source_by_index", "arguments": {"sourceIndex": 35}}}
+{"input": "use source index nine for hdmi", "output": {"name": "switch_source_by_index", "arguments": {"sourceIndex": 9}}}
+{"input": "change to channel index thirty nine", "output": {"name": "switch_source_by_index", "arguments": {"sourceIndex": 39}}}
+{"input": "go back to the previous input source", "output": {"name": "switch_to_last_source", "arguments": {}}}
+{"input": "return to last channel", "output": {"name": "switch_to_last_source", "arguments": {}}}
+{"input": "switch back to whatever i had before", "output": {"name": "switch_to_last_source", "arguments": {}}}
+{"input": "what is the current source index", "output": {"name": "get_current_source_index", "arguments": {}}}
+{"input": "tell me which input is active right now", "output": {"name": "get_current_source_index", "arguments": {}}}
+{"input": "check the current signal source", "output": {"name": "get_current_source_index", "arguments": {}}}
+{"input": "convert source index nine to name", "output": {"name": "get_source_name", "arguments": {"sourceIndex": 9}}}
+{"input": "what name corresponds to index thirty five", "output": {"name": "get_source_name", "arguments": {"sourceIndex": 35}}}
+{"input": "translate this source index for me", "output": {"name": "get_source_name", "arguments": {"sourceIndex": 39}}}
+{"input": "list all available input sources", "output": {"name": "get_available_sources", "arguments": {}}}
+{"input": "show me what ports are connected", "output": {"name": "get_available_sources", "arguments": {}}}
+{"input": "which hdmi inputs are active", "output": {"name": "get_available_sources", "arguments": {}}}
+{"input": "freeze the screen", "output": {"name": "freeze_screen", "arguments": {}}}
+{"input": "pause the display for a moment", "output": {"name": "freeze_screen", "arguments": {}}}
+{"input": "hold the current frame on screen", "output": {"name": "freeze_screen", "arguments": {}}}
+{"input": "unfreeze the screen now", "output": {"name": "unfreeze_screen", "arguments": {}}}
+{"input": "resume normal display", "output": {"name": "unfreeze_screen", "arguments": {}}}
+{"input": "stop freezing the image", "output": {"name": "unfreeze_screen", "arguments": {}}}
+{"input": "is the screen currently frozen", "output": {"name": "is_screen_frozen", "arguments": {}}}
+{"input": "check if freeze mode is on", "output": {"name": "is_screen_frozen", "arguments": {}}}
+{"input": "turn the screen black", "output": {"name": "set_blank_screen", "arguments": {"off": true}}}
+{"input": "blank the display please", "output": {"name": "set_blank_screen", "arguments": {"off": true}}}
+{"input": "turn off the backlight", "output": {"name": "set_blank_screen", "arguments": {"off": true}}}
+{"input": "light up the screen again", "output": {"name": "set_blank_screen", "arguments": {"off": false}}}
+{"input": "restore the display from black", "output": {"name": "set_blank_screen", "arguments": {"off": false}}}
+{"input": "lock the touch screen", "output": {"name": "set_touch_locked", "arguments": {"lock": true}}}
+{"input": "disable all touch input", "output": {"name": "set_touch_locked", "arguments": {"lock": true}}}
+{"input": "prevent accidental touches", "output": {"name": "set_touch_locked", "arguments": {"lock": true}}}
+{"input": "unlock the touch controls", "output": {"name": "set_touch_locked", "arguments": {"lock": false}}}
+{"input": "enable touch again", "output": {"name": "set_touch_locked", "arguments": {"lock": false}}}
+{"input": "is touch locked right now", "output": {"name": "is_touch_locked", "arguments": {}}}
+{"input": "check touch lock status", "output": {"name": "is_touch_locked", "arguments": {}}}
+{"input": "lock the remote control", "output": {"name": "set_ir_locked", "arguments": {"lock": true}}}
+{"input": "disable ir remote buttons", "output": {"name": "set_ir_locked", "arguments": {"lock": true}}}
+{"input": "block the remote signals", "output": {"name": "set_ir_locked", "arguments": {"lock": true}}}
+{"input": "unlock the ir remote", "output": {"name": "set_ir_locked", "arguments": {"lock": false}}}
+{"input": "set volume to fifty", "output": {"name": "set_volume", "arguments": {"volume": 50}}}
+{"input": "make it louder to seventy five", "output": {"name": "set_volume", "arguments": {"volume": 75}}}
+{"input": "turn volume down to twenty", "output": {"name": "set_volume", "arguments": {"volume": 20}}}
+{"input": "increase volume by five", "output": {"name": "volume_up", "arguments": {"step": 5}}}
+{"input": "turn it up a little bit", "output": {"name": "volume_up", "arguments": {"step": 3}}}
+{"input": "volume up by ten steps", "output": {"name": "volume_up", "arguments": {"step": 10}}}
+{"input": "decrease volume by three", "output": {"name": "volume_down", "arguments": {"step": 3}}}
+{"input": "lower the sound a bit", "output": {"name": "volume_down", "arguments": {"step": 2}}}
+{"input": "what is the current volume level", "output": {"name": "get_volume", "arguments": {}}}
+{"input": "tell me the volume range", "output": {"name": "get_volume_range", "arguments": {}}}
+{"input": "mute everything", "output": {"name": "set_mute", "arguments": {"mute": true}}}
+{"input": "turn mute on for audio", "output": {"name": "set_mute", "arguments": {"mute": true}}}
+{"input": "unmute the system sound", "output": {"name": "set_mute", "arguments": {"mute": false}}}
+{"input": "mute only the built in speakers", "output": {"name": "set_speaker_mute", "arguments": {"mute": true}}}
+{"input": "disable internal speaker sound", "output": {"name": "set_speaker_mute", "arguments": {"mute": true}}}
+{"input": "unmute the speakers", "output": {"name": "set_speaker_mute", "arguments": {"mute": false}}}
+{"input": "mute the microphone hardware", "output": {"name": "set_mic_mute", "arguments": {"mute": true}}}
+{"input": "cut off the mic input", "output": {"name": "set_mic_mute", "arguments": {"mute": true}}}
+{"input": "unmute the microphone", "output": {"name": "set_mic_mute", "arguments": {"mute": false}}}
+{"input": "is the mic muted", "output": {"name": "is_mic_muted", "arguments": {}}}
+{"input": "check microphone mute status", "output": {"name": "is_mic_muted", "arguments": {}}}
+{"input": "set brightness to sixty", "output": {"name": "set_brightness", "arguments": {"value": 60}}}
+{"input": "make the screen brighter to eighty", "output": {"name": "set_brightness", "arguments": {"value": 80}}}
+{"input": "dim the display to thirty", "output": {"name": "set_brightness", "arguments": {"value": 30}}}
+{"input": "increase brightness by four", "output": {"name": "brightness_up", "arguments": {"step": 4}}}
+{"input": "brighten it up a notch", "output": {"name": "brightness_up", "arguments": {"step": 5}}}
+{"input": "decrease brightness by two", "output": {"name": "brightness_down", "arguments": {"step": 2}}}
+{"input": "what is current brightness", "output": {"name": "get_brightness", "arguments": {}}}
+{"input": "tell me the brightness range", "output": {"name": "get_brightness_range", "arguments": {}}}
+{"input": "enable eye care mode", "output": {"name": "set_eye_care_enabled", "arguments": {"enable": true}}}
+{"input": "turn on low blue light", "output": {"name": "set_eye_care_enabled", "arguments": {"enable": true}}}
+{"input": "disable eye care", "output": {"name": "set_eye_care_enabled", "arguments": {"enable": false}}}
+{"input": "is eye care enabled", "output": {"name": "is_eye_care_enabled", "arguments": {}}}
+{"input": "turn on auto backlight", "output": {"name": "set_auto_backlight", "arguments": {"enable": true}}}
+{"input": "enable automatic brightness", "output": {"name": "set_auto_backlight", "arguments": {"enable": true}}}
+{"input": "disable auto brightness", "output": {"name": "set_auto_backlight", "arguments": {"enable": false}}}
+{"input": "set backlight to standard mode", "output": {"name": "set_backlight_mode", "arguments": {"mode": "standard"}}}
+{"input": "switch to energy saving backlight", "output": {"name": "set_backlight_mode", "arguments": {"mode": "energy"}}}
+{"input": "use dynamic backlight mode", "output": {"name": "set_backlight_mode", "arguments": {"mode": "dynamic"}}}
+{"input": "set picture mode to vivid", "output": {"name": "set_picture_mode", "arguments": {"mode": "vivid"}}}
+{"input": "change to natural picture mode", "output": {"name": "set_picture_mode", "arguments": {"mode": "natural"}}}
+{"input": "use soft picture setting", "output": {"name": "set_picture_mode", "arguments": {"mode": "softness"}}}
+{"input": "switch sound mode to classroom", "output": {"name": "set_sound_mode", "arguments": {"mode": "classroom"}}}
+{"input": "set audio to movie mode", "output": {"name": "set_sound_mode", "arguments": {"mode": "movie"}}}
+{"input": "use music sound profile", "output": {"name": "set_sound_mode", "arguments": {"mode": "music"}}}
+{"input": "set aspect ratio to sixteen by nine", "output": {"name": "set_aspect_mode", "arguments": {"mode": "16:9"}}}
+{"input": "change to auto aspect", "output": {"name": "set_aspect_mode", "arguments": {"mode": "auto"}}}
+{"input": "use full screen mode", "output": {"name": "set_aspect_mode", "arguments": {"mode": "full"}}}
+{"input": "open the whiteboard app", "output": {"name": "open_app", "arguments": {"app": "whiteboard"}}}
+{"input": "launch the timer", "output": {"name": "open_app", "arguments": {"app": "timer"}}}
+{"input": "start the calculator", "output": {"name": "open_app", "arguments": {"app": "calculator"}}}
+{"input": "close the whiteboard", "output": {"name": "close_app", "arguments": {"app": "whiteboard"}}}
+{"input": "exit the browser app", "output": {"name": "close_app", "arguments": {"app": "browser"}}}
+{"input": "search google for lesson plans", "output": {"name": "search", "arguments": {"engine": "google", "query": "lesson plans"}}}
+{"input": "wikipedia search for photosynthesis", "output": {"name": "search", "arguments": {"engine": "wikipedia", "query": "photosynthesis"}}}
+{"input": "open network settings", "output": {"name": "open_settings", "arguments": {"section": "network"}}}
+{"input": "go to wifi settings", "output": {"name": "open_settings", "arguments": {"section": "wifi"}}}
+{"input": "close the settings panel", "output": {"name": "close_settings", "arguments": {}}}
+{"input": "show recent tasks", "output": {"name": "show_recent_tasks", "arguments": {}}}
+{"input": "take a screenshot", "output": {"name": "take_screenshot", "arguments": {}}}
+{"input": "power off the device", "output": {"name": "power_off", "arguments": {}}}
+{"input": "reboot the system", "output": {"name": "reboot", "arguments": {}}}
+{"input": "reboot in thirty seconds", "output": {"name": "reboot_delay", "arguments": {"seconds": 30}}}
+{"input": "schedule shutdown after one hundred twenty seconds", "output": {"name": "schedule_shutdown_after", "arguments": {"seconds": 120}}}
+{"input": "show shutdown dialog", "output": {"name": "show_shutdown_dialog", "arguments": {}}}
+{"input": "enter focus mode", "output": {"name": "enter_focus_mode", "arguments": {}}}
+{"input": "exit focus mode now", "output": {"name": "exit_focus_mode", "arguments": {}}}
+{"input": "what is the sdk version", "output": {"name": "get_sdk_version", "arguments": {}}}
+
+{"input": "set group cast join to auto accept", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": -1}}}
+{"input": "make group invitations auto join without asking", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": -1}}}
+{"input": "turn on manual approval for group cast joins", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": 0}}}
+{"input": "i want popup confirmation when students try to join group cast", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": 0}}}
+{"input": "disable all group cast invitations completely", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": 1}}}
+{"input": "reject every group cast request automatically", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": 1}}}
+{"input": "switch group join to manual mode please", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": 0}}}
+{"input": "allow group cast to join without any prompt", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": -1}}}
+{"input": "stop accepting group casts from now on", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": 1}}}
+{"input": "change group cast join strategy to require authorization", "output": {"name": "set_group_cast_join", "arguments": {"groupCastJoin": 0}}}
+{"input": "set group cast display to always push", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": -1}}}
+{"input": "make the screen always broadcast to the group", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": -1}}}
+{"input": "sync screen only when someone is casting to me", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": 0}}}
+{"input": "turn off group cast screen sharing entirely", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": 1}}}
+{"input": "never sync my display to the multicast group", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": 1}}}
+{"input": "i want the group to always see my screen", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": -1}}}
+{"input": "stop pushing screen to group cast session", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": 1}}}
+{"input": "only show my screen in group when clients are connected", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": 0}}}
+{"input": "enable always on group display sync", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": -1}}}
+{"input": "disable group cast display broadcasting", "output": {"name": "set_group_cast_display", "arguments": {"groupCastDisplay": 1}}}
+{"input": "get the current group device list", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "show me all devices in the multicast group", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "list the large screen and client devices in group cast", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "who is connected in the group session right now", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "pull up the group device information", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "refresh the group cast device list", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "tell me the devices participating in group cast", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "display group devices on screen", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "check group cast connected devices", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "what devices are in the current group", "output": {"name": "get_group_device", "arguments": {}}}
+{"input": "start group cast to device1 and device2", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"Device1\", \"Device2\"]"}}}
+{"input": "push my screen to the group with tablet a and tablet b", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"TabletA\", \"TabletB\"]"}}}
+{"input": "begin multicast to student laptop one and two", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"StudentLaptop1\", \"StudentLaptop2\"]"}}}
+{"input": "start casting my screen to the selected group devices", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"DeviceX\", \"DeviceY\"]"}}}
+{"input": "group cast to room tv and projector now", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"RoomTV\", \"Projector\"]"}}}
+{"input": "proactively share screen with client three and client four", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"Client3\", \"Client4\"]"}}}
+{"input": "initiate group cast session to these devices", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"FrontDisplay\", \"SideMonitor\"]"}}}
+{"input": "send my display to the group of student tablets", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"Tablet1\", \"Tablet2\", \"Tablet3\"]"}}}
+{"input": "launch group broadcasting to lab computers", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"LabPC1\", \"LabPC2\"]"}}}
+{"input": "start group cast for the whole class devices", "output": {"name": "start_cast_group", "arguments": {"devices": "[\"Student1\", \"Student2\"]"}}}
+{"input": "enable the microphone for casting", "output": {"name": "set_mic", "arguments": {"enable": true}}}
+{"input": "turn on mic uplink in the cast session", "output": {"name": "set_mic", "arguments": {"enable": true}}}
+{"input": "i need my voice to be heard during casting", "output": {"name": "set_mic", "arguments": {"enable": true}}}
+{"input": "disable microphone in casting session", "output": {"name": "set_mic", "arguments": {"enable": false}}}
+{"input": "mute the mic for all cast receivers", "output": {"name": "set_mic", "arguments": {"enable": false}}}
+{"input": "stop sending audio from my mic over cast", "output": {"name": "set_mic", "arguments": {"enable": false}}}
+{"input": "turn the casting microphone back on", "output": {"name": "set_mic", "arguments": {"enable": true}}}
+{"input": "no more mic during screen sharing please", "output": {"name": "set_mic", "arguments": {"enable": false}}}
+{"input": "activate mic channel for this lesson cast", "output": {"name": "set_mic", "arguments": {"enable": true}}}
+{"input": "cut the microphone uplink now", "output": {"name": "set_mic", "arguments": {"enable": false}}}
+{"input": "turn on camera for casting", "output": {"name": "set_camera", "arguments": {"enable": true}}}
+{"input": "enable camera sharing in the cast", "output": {"name": "set_camera", "arguments": {"enable": true}}}
+{"input": "let them see me through the camera during cast", "output": {"name": "set_camera", "arguments": {"enable": true}}}
+{"input": "disable camera uplink", "output": {"name": "set_camera", "arguments": {"enable": false}}}
+{"input": "stop camera from being visible to cast clients", "output": {"name": "set_camera", "arguments": {"enable": false}}}
+{"input": "turn off my camera in the casting session", "output": {"name": "set_camera", "arguments": {"enable": false}}}
+{"input": "i want to share video from camera now", "output": {"name": "set_camera", "arguments": {"enable": true}}}
+{"input": "hide the camera feed from remote viewers", "output": {"name": "set_camera", "arguments": {"enable": false}}}
+{"input": "activate camera capture for casting", "output": {"name": "set_camera", "arguments": {"enable": true}}}
+{"input": "no camera during this presentation cast", "output": {"name": "set_camera", "arguments": {"enable": false}}}
+{"input": "rename this device to teacher main display", "output": {"name": "set_devices_name", "arguments": {"name": "Teacher Main Display"}}}
+{"input": "change my casting name to classroom hub", "output": {"name": "set_devices_name", "arguments": {"name": "Classroom Hub"}}}
+{"input": "set device name to smart board one", "output": {"name": "set_devices_name", "arguments": {"name": "Smart Board One"}}}
+{"input": "update the display name for casting to front screen", "output": {"name": "set_devices_name", "arguments": {"name": "Front Screen"}}}
+{"input": "call this device lecture projector", "output": {"name": "set_devices_name", "arguments": {"name": "Lecture Projector"}}}
+{"input": "rename device to main teaching station", "output": {"name": "set_devices_name", "arguments": {"name": "Main Teaching Station"}}}
+{"input": "change casting name to room tv display", "output": {"name": "set_devices_name", "arguments": {"name": "Room TV Display"}}}
+{"input": "set new name as interactive whiteboard", "output": {"name": "set_devices_name", "arguments": {"name": "Interactive Whiteboard"}}}
+{"input": "make the device name teacher console", "output": {"name": "set_devices_name", "arguments": {"name": "Teacher Console"}}}
+{"input": "update name to class presentation screen", "output": {"name": "set_devices_name", "arguments": {"name": "Class Presentation Screen"}}}
+{"input": "refresh the connection code now", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "generate a new casting pin immediately", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "update the pin for casting", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "give me a fresh connection code", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "invalidate old code and make new one", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "refresh connect code for security", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "create new casting pin right away", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "reset the current connection code", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "get a brand new pin for students", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "refresh the code please", "output": {"name": "refresh_connect_code", "arguments": {}}}
+{"input": "set code refresh to manual only", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": -1}}}
+{"input": "make the pin refresh every thirty minutes", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": 0}}}
+{"input": "change auto refresh to every day", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": 1}}}
+{"input": "set refresh time to every ten minutes", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": 2}}}
+{"input": "turn off automatic code refreshing", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": -1}}}
+{"input": "i want the code to update once a day", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": 1}}}
+{"input": "refresh code more frequently every ten mins", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": 2}}}
+{"input": "no auto refresh for the casting code", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": -1}}}
+{"input": "set refresh cycle to half hour", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": 0}}}
+{"input": "daily refresh for connection code", "output": {"name": "set_refresh_time", "arguments": {"refreshTime": 1}}}
+{"input": "limit split screen to four clients", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 4}}}
+{"input": "set maximum concurrent casts to two", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 2}}}
+{"input": "allow up to six students on screen at once", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 6}}}
+{"input": "change split screen limit to nine", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 9}}}
+{"input": "only one client can cast at a time", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 1}}}
+{"input": "increase the number of split screens to eight", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 8}}}
+{"input": "set max split to three students", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 3}}}
+{"input": "i want four way split screen max", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 4}}}
+{"input": "limit to five concurrent casting clients", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 5}}}
+{"input": "maximum of seven screens please", "output": {"name": "set_split_screen_limit", "arguments": {"screenNum": 7}}}
+{"input": "how many clients are connected right now", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "tell me the number of active casting clients", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "check connected count for casting", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "show current number of students casting", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "what is the connected client count", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "get the count of devices casting to me", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "how many are sharing screen currently", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "read out the connected casting number", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "display how many clients are online", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "check the current connection tally", "output": {"name": "get_connected_count", "arguments": {}}}
+{"input": "list all currently connected clients", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "show me details of every casting client", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "get the full client list for casting", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "who is casting to the main screen now with details", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "pull up information on all connected devices", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "display client list with info", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "i need to see all active cast clients", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "fetch detailed list of casting students", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "show connected client information", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "get clients currently linked", "output": {"name": "get_client_list", "arguments": {}}}
+{"input": "disconnect device1 and device2", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"Device1\", \"Device2\"]"}}}
+{"input": "kick student laptop three from casting", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"StudentLaptop3\"]"}}}
+{"input": "force disconnect tablet a and tablet b", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"TabletA\", \"TabletB\"]"}}}
+{"input": "end casting session for client four", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"Client4\"]"}}}
+{"input": "remove these devices from connection device five and six", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"Device5\", \"Device6\"]"}}}
+{"input": "terminate cast for the troublemaker client", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"Troublemaker\"]"}}}
+{"input": "disconnect all listed students now", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"Student1\", \"Student2\"]"}}}
+{"input": "cut off connection to projector two", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"Projector2\"]"}}}
+{"input": "stop casting from client seven immediately", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"Client7\"]"}}}
+{"input": "disconnect the group of devices", "output": {"name": "set_client_disconnect", "arguments": {"devices": "[\"GroupDevice1\", \"GroupDevice2\"]"}}}
+{"input": "turn on auto full screen for single client", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": true}}}
+{"input": "make single cast fill the whole screen", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": true}}}
+{"input": "enable automatic full screen mode", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": true}}}
+{"input": "disable auto full screen keep split layout", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": false}}}
+{"input": "stop auto expanding single casts", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": false}}}
+{"input": "i prefer window layout even for one student", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": false}}}
+{"input": "always use full screen when only one is casting", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": true}}}
+{"input": "turn off full screen auto for single person", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": false}}}
+{"input": "activate full screen for solo casting", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": true}}}
+{"input": "no more auto full screen please", "output": {"name": "set_auto_full_screen", "arguments": {"isFullScreen": false}}}
+{"input": "enable floating window for casting", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": true}}}
+{"input": "turn on picture in picture mode", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": true}}}
+{"input": "use draggable float window for casts", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": true}}}
+{"input": "disable floating window use normal layout", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": false}}}
+{"input": "stop using pip window for casting content", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": false}}}
+{"input": "i dont want the floating cast window", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": false}}}
+{"input": "switch to floating mode for better multitasking", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": true}}}
+{"input": "turn off the draggable cast overlay", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": false}}}
+{"input": "enable pip for all casting sessions", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": true}}}
+{"input": "make casting appear in floating window", "output": {"name": "set_float_window", "arguments": {"isFloatWindow": true}}}
+{"input": "show device name watermark on casts", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": true}}}
+{"input": "turn on source name labels", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": true}}}
+{"input": "display the device names on screen", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": true}}}
+{"input": "hide device name overlays", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": false}}}
+{"input": "remove the name watermark from casting windows", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": false}}}
+{"input": "no more labels showing who is casting", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": false}}}
+{"input": "enable name tags for clarity", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": true}}}
+{"input": "disable showing device names", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": false}}}
+{"input": "i want to see source names on each window", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": true}}}
+{"input": "turn off the device name display", "output": {"name": "set_show_device_name", "arguments": {"showDeviceName": false}}}
+{"input": "enable miracast support", "output": {"name": "set_miracast", "arguments": {"enable": true}}}
+{"input": "turn on windows wireless display", "output": {"name": "set_miracast", "arguments": {"enable": true}}}
+{"input": "allow miracast casting from android and windows", "output": {"name": "set_miracast", "arguments": {"enable": true}}}
+{"input": "disable miracast protocol", "output": {"name": "set_miracast", "arguments": {"enable": false}}}
+{"input": "stop supporting miracast connections", "output": {"name": "set_miracast", "arguments": {"enable": false}}}
+{"input": "turn off wireless display for windows devices", "output": {"name": "set_miracast", "arguments": {"enable": false}}}
+{"input": "reactivate miracast so students can find me", "output": {"name": "set_miracast", "arguments": {"enable": true}}}
+{"input": "no miracast for now", "output": {"name": "set_miracast", "arguments": {"enable": false}}}
+{"input": "enable airplay for apple devices", "output": {"name": "set_airplay", "arguments": {"enable": true}}}
+{"input": "turn on airplay mirroring", "output": {"name": "set_airplay", "arguments": {"enable": true}}}
+{"input": "support iphone and mac casting", "output": {"name": "set_airplay", "arguments": {"enable": true}}}
+{"input": "disable airplay completely", "output": {"name": "set_airplay", "arguments": {"enable": false}}}
+{"input": "stop allowing airplay from ipads", "output": {"name": "set_airplay", "arguments": {"enable": false}}}
+{"input": "turn airplay off for the session", "output": {"name": "set_airplay", "arguments": {"enable": false}}}
+{"input": "make airplay available again", "output": {"name": "set_airplay", "arguments": {"enable": true}}}
+{"input": "disable airplay protocol", "output": {"name": "set_airplay", "arguments": {"enable": false}}}
+{"input": "enable google cast support", "output": {"name": "set_google_cast", "arguments": {"enable": true}}}
+{"input": "turn on chromecast receiver mode", "output": {"name": "set_google_cast", "arguments": {"enable": true}}}
+{"input": "allow chrome casting to this device", "output": {"name": "set_google_cast", "arguments": {"enable": true}}}
+{"input": "disable google cast", "output": {"name": "set_google_cast", "arguments": {"enable": false}}}
+{"input": "stop chromecast from finding this screen", "output": {"name": "set_google_cast", "arguments": {"enable": false}}}
+{"input": "turn off google cast functionality", "output": {"name": "set_google_cast", "arguments": {"enable": false}}}
+{"input": "reactivate google cast", "output": {"name": "set_google_cast", "arguments": {"enable": true}}}
+{"input": "no more google cast for today", "output": {"name": "set_google_cast", "arguments": {"enable": false}}}
+{"input": "switch to simple ui mode", "output": {"name": "set_simple_ui", "arguments": {"enable": true}}}
+{"input": "enable minimalist casting interface", "output": {"name": "set_simple_ui", "arguments": {"enable": true}}}
+{"input": "turn on simple mode for easier use", "output": {"name": "set_simple_ui", "arguments": {"enable": true}}}
+{"input": "disable simple ui use full interface", "output": {"name": "set_simple_ui", "arguments": {"enable": false}}}
+{"input": "go back to standard casting ui", "output": {"name": "set_simple_ui", "arguments": {"enable": false}}}
+{"input": "i need the full options not simple mode", "output": {"name": "set_simple_ui", "arguments": {"enable": false}}}
+{"input": "activate simple ui for the class", "output": {"name": "set_simple_ui", "arguments": {"enable": true}}}
+{"input": "turn simple interface off", "output": {"name": "set_simple_ui", "arguments": {"enable": false}}}
+{"input": "enable weak network optimization", "output": {"name": "set_weak_network", "arguments": {"enable": true}}}
+{"input": "turn on low quality mode for bad wifi", "output": {"name": "set_weak_network", "arguments": {"enable": true}}}
+{"input": "optimize for weak connection", "output": {"name": "set_weak_network", "arguments": {"enable": true}}}
+{"input": "disable weak network mode", "output": {"name": "set_weak_network", "arguments": {"enable": false}}}
+{"input": "use normal quality even if wifi is spotty", "output": {"name": "set_weak_network", "arguments": {"enable": false}}}
+{"input": "turn off smoothness priority", "output": {"name": "set_weak_network", "arguments": {"enable": false}}}
+{"input": "activate weak network settings", "output": {"name": "set_weak_network", "arguments": {"enable": true}}}
+{"input": "stop reducing bitrate for casting", "output": {"name": "set_weak_network", "arguments": {"enable": false}}}
+{"input": "enable wifi direct for offline casting", "output": {"name": "set_wifi_direct", "arguments": {"enable": true}}}
+{"input": "turn on peer to peer casting", "output": {"name": "set_wifi_direct", "arguments": {"enable": true}}}
+{"input": "allow direct wifi without router", "output": {"name": "set_wifi_direct", "arguments": {"enable": true}}}
+{"input": "disable wifi direct", "output": {"name": "set_wifi_direct", "arguments": {"enable": false}}}
+{"input": "only use lan wifi no direct mode", "output": {"name": "set_wifi_direct", "arguments": {"enable": false}}}
+{"input": "turn off p2p casting capability", "output": {"name": "set_wifi_direct", "arguments": {"enable": false}}}
+{"input": "enable direct connection mode", "output": {"name": "set_wifi_direct", "arguments": {"enable": true}}}
+{"input": "no wifi direct please", "output": {"name": "set_wifi_direct", "arguments": {"enable": false}}}
+{"input": "enable wired projection via hdmi", "output": {"name": "set_wired_projection", "arguments": {"enable": true}}}
+{"input": "turn on cable casting input", "output": {"name": "set_wired_projection", "arguments": {"enable": true}}}
+{"input": "allow hdmi and usb c connections", "output": {"name": "set_wired_projection", "arguments": {"enable": true}}}
+{"input": "disable wired projection", "output": {"name": "set_wired_projection", "arguments": {"enable": false}}}
+{"input": "stop accepting cable inputs", "output": {"name": "set_wired_projection", "arguments": {"enable": false}}}
+{"input": "turn off physical cable casting", "output": {"name": "set_wired_projection", "arguments": {"enable": false}}}
+{"input": "reactivate wired casting ports", "output": {"name": "set_wired_projection", "arguments": {"enable": true}}}
+{"input": "disable all wired inputs for now", "output": {"name": "set_wired_projection", "arguments": {"enable": false}}}
+{"input": "check for casting app updates", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "look for new version of the cast software", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "run update check for airgo cast", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "see if there is a casting app update available", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "trigger version check now", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "update the casting application", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "check if casting app needs updating", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "perform app update scan", "output": {"name": "check_app_update", "arguments": {}}}
+{"input": "show the cast diagnostic logs", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": true}}}
+{"input": "open the troubleshooting log window", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": true}}}
+{"input": "display casting logs to debug lag", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": true}}}
+{"input": "hide the diagnostic log window", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": false}}}
+{"input": "close the cast log dialog", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": false}}}
+{"input": "turn off the log viewer", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": false}}}
+{"input": "bring up logs for connection issues", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": true}}}
+{"input": "stop showing the diagnostic window", "output": {"name": "show_cast_log_dialog", "arguments": {"isShow": false}}}
+{"input": "show device management dialog", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": true, "type": 0}}}
+{"input": "open the client management panel", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": true, "type": 0}}}
+{"input": "display guidance instructions for casting", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": true, "type": 1}}}
+{"input": "hide the float center dialog", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": false, "type": 0}}}
+{"input": "close the device list overlay", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": false, "type": 0}}}
+{"input": "show setup help dialog", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": true, "type": 1}}}
+{"input": "bring up management tools for connected clients", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": true, "type": 0}}}
+{"input": "dismiss the guidance popup", "output": {"name": "show_float_center_dialog", "arguments": {"isShow": false, "type": 1}}}
+{"input": "allow all clients to cast without permission", "output": {"name": "set_cast_permission", "arguments": {"type": -1}}}
+{"input": "set cast admission to require approval", "output": {"name": "set_cast_permission", "arguments": {"type": 0}}}
+{"input": "disable all incoming casting requests", "output": {"name": "set_cast_permission", "arguments": {"type": 1}}}
+{"input": "make casting open to everyone", "output": {"name": "set_cast_permission", "arguments": {"type": -1}}}
+{"input": "turn on popup for every cast attempt", "output": {"name": "set_cast_permission", "arguments": {"type": 0}}}
+{"input": "reject all cast connections", "output": {"name": "set_cast_permission", "arguments": {"type": 1}}}
+{"input": "no authorization needed for casting", "output": {"name": "set_cast_permission", "arguments": {"type": -1}}}
+{"input": "require manual confirmation for clients", "output": {"name": "set_cast_permission", "arguments": {"type": 0}}}
+{"input": "block every student from casting", "output": {"name": "set_cast_permission", "arguments": {"type": 1}}}
+{"input": "start reverse cast to student tablet one and two", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"StudentTablet1\", \"StudentTablet2\"]", "enable": true}}}
+{"input": "push the main screen to client a now", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"ClientA\"]", "enable": true}}}
+{"input": "stop reverse casting to device three", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"Device3\"]", "enable": false}}}
+{"input": "send large screen to the group of tablets", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"TabletGroup\"]", "enable": true}}}
+{"input": "end pushing screen to all clients", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"AllClients\"]", "enable": false}}}
+{"input": "begin reverse screen share with laptop b", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"LaptopB\"]", "enable": true}}}
+{"input": "reverse cast enabled for student one", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"Student1\"]", "enable": true}}}
+{"input": "halt reverse casting immediately", "output": {"name": "set_reverse_cast_screen", "arguments": {"devices": "[\"Student2\"]", "enable": false}}}
+{"input": "allow free reverse casting from clients", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": -1}}}
+{"input": "require authorization for reverse cast requests", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": 1}}}
+{"input": "disable reverse casting completely", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": 2}}}
+{"input": "let anyone pull the screen without asking", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": -1}}}
+{"input": "set reverse cast to need popup confirmation", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": 1}}}
+{"input": "reject all reverse cast attempts", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": 2}}}
+{"input": "no approval for students to receive screen", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": -1}}}
+{"input": "block reverse screen pulling", "output": {"name": "set_reverse_cast_permission", "arguments": {"type": 2}}}
+{"input": "enable global screen sharing", "output": {"name": "set_share_screen", "arguments": {"enable": true}}}
+{"input": "turn on the master share switch", "output": {"name": "set_share_screen", "arguments": {"enable": true}}}
+{"input": "allow all outgoing screen shares", "output": {"name": "set_share_screen", "arguments": {"enable": true}}}
+{"input": "disable screen sharing completely", "output": {"name": "set_share_screen", "arguments": {"enable": false}}}
+{"input": "turn off the main sharing capability", "output": {"name": "set_share_screen", "arguments": {"enable": false}}}
+{"input": "stop all screen sharing from this device", "output": {"name": "set_share_screen", "arguments": {"enable": false}}}
+{"input": "reactivate sharing for the lesson", "output": {"name": "set_share_screen", "arguments": {"enable": true}}}
+{"input": "global share is now off", "output": {"name": "set_share_screen", "arguments": {"enable": false}}}
+{"input": "show screen from device one", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Device1\"]", "enable": true}}}
+{"input": "display client two on the large screen", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Client2\"]", "enable": true}}}
+{"input": "hide the content from student three but keep connected", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Student3\"]", "enable": false}}}
+{"input": "bring up device four on main display", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Device4\"]", "enable": true}}}
+{"input": "remove laptop five from view", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Laptop5\"]", "enable": false}}}
+{"input": "show multiple clients device six and seven", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Device6\", \"Device7\"]", "enable": true}}}
+{"input": "stop displaying client eight", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Client8\"]", "enable": false}}}
+{"input": "open the screen for tablet nine", "output": {"name": "set_open_screen", "arguments": {"devices": "[\"Tablet9\"]", "enable": true}}}
+{"input": "grant control to student one", "output": {"name": "set_open_control", "arguments": {"devices": "[\"Student1\"]", "enable": true}}}
+{"input": "allow client two to control the large screen", "output": {"name": "set_open_control", "arguments": {"devices": "[\"Client2\"]", "enable": true}}}
+{"input": "revoke control permission for device three", "output": {"name": "set_open_control", "arguments": {"devices": "[\"Device3\"]", "enable": false}}}
+{"input": "give remote control to tablet a", "output": {"name": "set_open_control", "arguments": {"devices": "[\"TabletA\"]", "enable": true}}}
+{"input": "disable control for laptop b", "output": {"name": "set_open_control", "arguments": {"devices": "[\"LaptopB\"]", "enable": false}}}
+{"input": "enable reverse control for student group", "output": {"name": "set_open_control", "arguments": {"devices": "[\"StudentGroup\"]", "enable": true}}}
+{"input": "take away control rights from client four", "output": {"name": "set_open_control", "arguments": {"devices": "[\"Client4\"]", "enable": false}}}
+{"input": "let device five remotely control now", "output": {"name": "set_open_control", "arguments": {"devices": "[\"Device5\"]", "enable": true}}}
