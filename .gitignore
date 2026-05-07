@@ -1,2 +1,4 @@
 bert-base-multilingual-uncased
 .env
+__pycache__
+.python-version

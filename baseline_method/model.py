@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 from dataclasses import dataclass
 from pathlib import Path
-from transformers import BertModel
-from .comment import ENTROPY
+from transformers import BertModel, BertTokenizer
+from .comment import ENTROPY, id2entropy
 
 
 # =========================
@@ -16,17 +16,9 @@ class BaseLineModelConfig:
     """
 
     is_train: bool = False  # 是否训练模式（影响dropout等行为）
-
-    # 预训练BERT模型路径（本地加载）
-    backbone_model: Path = Path(__file__).parent.parent / "bert-base-multilingual-uncased"
-
-    hidden_size: int = 768  # BERT隐层维度
-
-    @property
-    def num_labels(self) -> int:
-        "标签类别数(NER标签数)"
-        return len(ENTROPY)     
-
+    batch_size: int = 16
+    epochs: int = 5
+    lr: float = 5e-5
     @property
     def dropout(self) -> float:
         """
@@ -35,6 +27,15 @@ class BaseLineModelConfig:
         - 推理阶段关闭dropout保证稳定性
         """
         return 0.1 if self.is_train else 0.0
+
+    # 预训练BERT模型路径（本地加载）
+    backbone_model: Path = Path(__file__).parent.parent / "bert-base-multilingual-uncased"
+    hidden_size: int = 768  # BERT隐层维度
+
+    @property
+    def num_labels(self) -> int:
+        "标签类别数(NER标签数)"
+        return len(ENTROPY)     
 
     # 自动选择运行设备
     @property
@@ -48,8 +49,7 @@ class BaseLineModelConfig:
         # 3. 最后退回到 CPU
         else:
             return "cpu"
-    
-
+        
 
 # =========================
 # 输出封装类
@@ -61,17 +61,16 @@ class BaseLineModelOutput:
     def __init__(
         self, 
         logits: torch.Tensor,
-        labels: list[list[str]],
+        loss: torch.Tensor,
         predictions: list[list[str]]
     ):
         """
         参数说明：
         - logits: 模型原始输出（未经过softmax） [B, L, C]
-        - labels: 原始标签（字符串形式）
         - predictions: 预测标签（字符串形式）
         """
         self.logits = logits
-        self.labels = labels
+        self.loss = loss
         self.predictions = predictions
 
 
@@ -85,6 +84,7 @@ class BaseLineModel(nn.Module):
 
         self.config = config
         self.device = config.device
+        self.num_labels = config.num_labels
 
         # ===== BERT Backbone =====
         self.backbone = BertModel.from_pretrained(
@@ -98,11 +98,12 @@ class BaseLineModel(nn.Module):
         # ===== 分类头（逐token分类）=====
         self.classifier = nn.Linear(
             config.hidden_size,
-            config.num_labels
+            self.num_labels
         ).to(self.device)
 
         # Dropout层（防止过拟合）
         self.dropout = nn.Dropout(config.dropout)
+        self.loss_fct = nn.CrossEntropyLoss(ignore_index=-100)
 
     # =========================
     # 前向传播
@@ -111,7 +112,7 @@ class BaseLineModel(nn.Module):
         self,
         input_ids: torch.Tensor,
         attention_mask: torch.Tensor,
-        labels: list[list[str]],
+        labels: torch.Tensor | None = None
     ) -> BaseLineModelOutput:
         """
         参数：
@@ -126,6 +127,9 @@ class BaseLineModel(nn.Module):
         # 移动到设备
         input_ids = input_ids.to(self.device)
         attention_mask = attention_mask.to(self.device)
+
+        if isinstance(labels, torch.Tensor):
+            labels = labels.to(self.device)
 
         # ===== BERT编码 =====
         outputs = self.backbone(
@@ -142,6 +146,14 @@ class BaseLineModel(nn.Module):
         # ===== Token级分类 =====
         logits = self.classifier(hidden)  # [B, L, C]
 
+        active_loss = attention_mask.view(-1) == 1
+        active_logits = logits.reshape(-1, self.num_labels)[active_loss]
+        active_labels = labels.reshape(-1)[active_loss]
+
+        loss = 0
+        if isinstance(labels, torch.Tensor):
+            loss = self.loss_fct(active_logits, active_labels)
+
         # ===== 解码预测结果 =====
         pred_ids = torch.argmax(logits, dim=-1).cpu().tolist()
 
@@ -153,44 +165,11 @@ class BaseLineModel(nn.Module):
 
         return BaseLineModelOutput(
             logits=logits,
-            labels=labels,
+            loss=loss,
             predictions=predictions,
         )
-
-
-    # =========================
-    # 损失函数（NER标准写法）
-    # =========================
-    def compute_loss(
-        self,
-        logits: torch.Tensor,
-        labels: torch.Tensor,
-        attention_mask: torch.Tensor
-    ):
-        """
-        参数：
-        - logits: 模型输出 [B, L, C]
-        - labels: 标签id [B, L]
-        - attention_mask: mask [B, L]
-
-        说明：
-        - 使用 CrossEntropyLoss
-        - 忽略 padding 和特殊token（label = -100）
-        """
-
-        # ignore_index=-100 是 HuggingFace 标准做法
-        loss_fct = nn.CrossEntropyLoss(ignore_index=-100)
-
-        # ===== 仅计算有效token =====
-        active_loss = attention_mask.view(-1) == 1
-
-        # reshape
-        active_logits = logits.view(-1, logits.shape[-1])
-        active_labels = labels.view(-1)
-
-        # 过滤padding位置
-        active_logits = active_logits[active_loss]
-        active_labels = active_labels[active_loss]
-
-        # 计算损失
-        return loss_fct(active_logits, active_labels)
+    
+__all__ = [
+    "BaseLineModelConfig",
+    "BaseLineModel"
+]

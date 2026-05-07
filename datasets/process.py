@@ -305,7 +305,7 @@ async def async_process(client: AsyncClient, dataset: dict) -> dict:
 
 def build_train(debug_mode: bool = False):
     datasets = DATASETS / "datasets.jsonl"
-    output = DATASETS / "tran.json"
+    output = DATASETS / "train.json"
     clinet = AsyncClient(base_url=os.environ['BASE_URL'], api_key=os.environ['API_KEY'])
     tokenizer = BertTokenizer.from_pretrained(str(MODEL_PATH), fix_mistral_regex=True)
     first_predata = load_datasets(tokenizer, datasets)
