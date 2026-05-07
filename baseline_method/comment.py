@@ -3,10 +3,23 @@ from pathlib import Path
 DATASETS_DIR = Path(__file__).parent.parent / "datasets"
 
 ENTROPY = [
-    "B-SUB", "I-SUB",
+
+    # ===== Action =====
     "B-PRED", "I-PRED",
-    "B-OBJ", "I-OBJ",
-    "B-ATT", "I-ATT",
+
+    # ===== Core Arguments =====
+    "B-OBJ",  "I-OBJ",
+    "B-VAL",  "I-VAL",
+    "B-LOC",  "I-LOC",
+
+    # ===== Optional Semantic Roles =====
+    "B-ATTR", "I-ATTR",
+
+    # ===== Control / Logic =====
+    "B-COND", "I-COND",
+    "B-TIME", "I-TIME",
+
+    # ===== Outside =====
     "O"
 ]
 
