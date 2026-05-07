@@ -8,6 +8,7 @@ dependencies = [
     "dotenv>=0.9.9",
     "modelscope>=1.36.3",
     "openai>=2.34.0",
+    "seqeval>=1.2.2",
     "torch>=2.11.0",
     "transformers>=5.8.0",
 ]

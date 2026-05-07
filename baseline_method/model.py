@@ -62,7 +62,6 @@ class BaseLineModelOutput:
         self, 
         logits: torch.Tensor,
         loss: torch.Tensor,
-        predictions: list[list[str]]
     ):
         """
         参数说明：
@@ -71,7 +70,6 @@ class BaseLineModelOutput:
         """
         self.logits = logits
         self.loss = loss
-        self.predictions = predictions
 
 
 
@@ -123,27 +121,19 @@ class BaseLineModel(nn.Module):
         返回：
         - BaseLineModelOutput
         """
-
-        # 移动到设备
         input_ids = input_ids.to(self.device)
         attention_mask = attention_mask.to(self.device)
 
         if isinstance(labels, torch.Tensor):
             labels = labels.to(self.device)
 
-        # ===== BERT编码 =====
         outputs = self.backbone(
             input_ids=input_ids,
             attention_mask=attention_mask
         )
 
-        # 取最后一层hidden state [B, L, H]
         hidden = outputs.last_hidden_state
-
-        # dropout（训练时生效）
         hidden = self.dropout(hidden)
-
-        # ===== Token级分类 =====
         logits = self.classifier(hidden)  # [B, L, C]
 
         active_loss = attention_mask.view(-1) == 1
@@ -154,19 +144,10 @@ class BaseLineModel(nn.Module):
         if isinstance(labels, torch.Tensor):
             loss = self.loss_fct(active_logits, active_labels)
 
-        # ===== 解码预测结果 =====
-        pred_ids = torch.argmax(logits, dim=-1).cpu().tolist()
-
-        # 将id映射为标签字符串
-        predictions = [
-            [ENTROPY[idx] for idx in seq]
-            for seq in pred_ids
-        ]
 
         return BaseLineModelOutput(
             logits=logits,
             loss=loss,
-            predictions=predictions,
         )
     
 __all__ = [
