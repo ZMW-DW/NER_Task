@@ -14,7 +14,7 @@ from baseline_method import (
 )
 
 def main():
-    config = BaseLineModelConfig(is_train=True, batch_size=2)
+    config = BaseLineModelConfig(is_train=True, batch_size=16, epochs=10)
     model: BaseLineModel = BaseLineModel(config=config)
     model.to(config.device)
     model.train()

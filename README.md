@@ -15,30 +15,6 @@ It supports dataset preprocessing, token alignment, data merging, and asynchrono
 - tqdm progress tracking
 - Reproducible environment via `uv`
 
----
-
-## 📁 Project Structure
-
-```
-
-.
-├── basemodel.py              # baseline model implementation (to be extended)
-├── main.py                   # training / inference entry
-├── datasets/
-│   ├── datasets.jsonl       # training data
-│   ├── evaluate.jsonl       # evaluation data
-│   ├── process.py           # dataset processing pipeline
-│   ├── tran.json            # processed training data
-│   └── test.json            # processed test data
-├── bert-base-multilingual-uncased/
-│   ├── config.json
-│   ├── tokenizer.json
-│   └── tokenizer_config.json
-├── setup.sh                  # environment bootstrap script
-├── pyproject.toml           # uv project config
-└── uv.lock
-
-````
 
 ---
 
@@ -56,6 +32,7 @@ chmod +x setup.sh
 
 ```bash
 ./setup.sh
+source .venv/bin/activate
 ```
 
 This script will:
@@ -141,13 +118,19 @@ It will include:
 ### Build training data
 
 ```bash
-python datasets/process.py
+uv run datasets/process.py
 ```
 
-### Run full pipeline
+### Run train
 
 ```bash
-python main.py
+uv run train.py
+```
+
+### Run test 
+
+```bash
+uv run test.py
 ```
 
 ---
