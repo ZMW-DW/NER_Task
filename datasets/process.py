@@ -16,177 +16,80 @@ DATASETS = WORK_SPACE / "datasets"
 
 semaphore = Semaphore(5)
 
+
 PROMPT = """
-You are a high-precision syntactic-semantic sequence labeling system.
+You are a high-precision semantic-role labeling (SRL) engine for Multi-Intent Task Dispatching.
 
-This is NOT traditional NER.
+Your goal is to parse unstructured user commands into structured Task Frames.
+Each Task Frame is anchored by a Predicate (PRED). 
+RULE: 1 Predicate Span = 1 Intent/Function Call.
 
-Your task is to assign BIO tags to tokens based on:
-- predicate structure
-- argument structure
-- phrasal verb semantics
-- multi-intent decomposition
+---
+## 0. STRICT ALIGNMENT CONSTRAINT (CRITICAL)
+
+1. The number of labels MUST exactly equal the number of tokens.
+2. Each token must be assigned exactly one BIO tag.
+3. If alignment is not possible, the sample is INVALID and must be rejected.
+4. Never output truncated or padded label sequences.
+
+## 1. Tag Set (The SLU Schema)
+
+- B-PRED / I-PRED : Actions, including phrasal verbs & auxiliaries (e.g., "turn off", "switch to", "want to open").
+- B-OBJ / I-OBJ   : Primary targets or entities (e.g., "light", "HDMI 1", "whiteboard", "volume").
+- B-VAL / I-VAL   : Values, states, or specific modes (e.g., "50%", "active", "silent", "blue").
+- B-LOC / I-LOC   : Locations, origins, or destinations (e.g., "living room", "on the screen").
+- B-ATTR / I-ATTR : Modifiers or specific properties (e.g., "this", "first", "large", "my").
+- O               : Connectors, fillers, or irrelevant tokens.
 
 ---
 
-## 1. Input
+## 2. Core Operational Principles
 
-You are given:
-1. A sentence
-2. Its tokenized form (WordPiece / BERT tokens)
+### 2.1 The Multi-Intent Split
+If a sentence contains multiple verbs (Predicates), they MUST be labeled as distinct B-PRED spans.
+Example: "Close the window and open the door" 
+-> "Close"(B-PRED), "open"(B-PRED).
 
-You MUST strictly use the given tokens.
+### 2.2 Predicate Continuity
+Phrasal verbs and auxiliary chains MUST be a continuous PRED span.
+- "Log in to" -> B-PRED, I-PRED, I-PRED
+- "Need to switch off" -> B-PRED, I-PRED, I-PRED, I-PRED
 
----
-
-## 2. Core Principle
-
-The sentence is interpreted as a set of **semantic predicate frames**.
-
-Each predicate frame contains:
-- Predicate (action / verb phrase)
-- Subject (who performs action)
-- Object (target / destination / entity)
-- Attributes (modifiers)
-
-A sentence may contain MULTIPLE predicate frames.
+### 2.3 Semantic Anchoring
+Arguments (OBJ, VAL, LOC) belong to the nearest PRED in the syntactic flow. 
 
 ---
 
-## 3. CRITICAL: Predicate Definition (VERY IMPORTANT)
+## 3. Formatting Rules
 
-### 3.1 Predicate is NOT a single verb
-
-A predicate may be:
-
-- single verb:
-  "open"
-  "close"
-
-- phrasal verb (VERY IMPORTANT):
-  "get back to"
-  "log in to"
-  "switch on"
-  "turn off"
-  "move into"
-  "go back to"
-
-- auxiliary + verb structure:
-  "want to exit"
-  "need to close"
-  "have to switch"
-
-### 3.2 Rule
-
-👉 ALL tokens belonging to a predicate MUST be labeled as PRED (continuous span)
-
-👉 DO NOT split verbs and particles inside predicate phrases
+1. Use ONLY the provided tokens.
+2. Every token must have exactly one BIO tag.
+3. Return ONLY a valid JSON object.
 
 ---
 
-## 4. Tag Set (ONLY these labels allowed)
-
-- B-SUB / I-SUB → Subject
-- B-PRED / I-PRED → Predicate (INCLUDING phrasal verbs + auxiliaries)
-- B-OBJ / I-OBJ → Object / target / destination
-- B-ATT / I-ATT → Attribute / modifier
-- O → Outside any semantic role
-
----
-
-## 5. BIO Rules
-
-- B-XXX = first token of a span
-- I-XXX = inside span
-- Each token must have exactly ONE label
-- No skipping tokens
-- No merging tokens
-- Must strictly follow input token order
-
----
-
-## 6. Multi-Intent Rule
-
-If multiple actions exist:
-- Each predicate defines one intent
-- BUT output must remain a single BIO sequence
-
----
-
-## 7. Important Linguistic Rules
-
-### 7.1 "to" is NOT a separator
-Examples:
-- "get back to"
-- "switch to"
-- "log in to"
-
-👉 "to" is part of predicate or argument depending on structure
-
----
-
-### 7.2 Determiners are not objects
-- "the", "a", "this", "that" → usually O or part of OBJ span
-
----
-
-### 7.3 Object spans
-Objects include:
-- nouns
-- noun phrases
-- destinations
-- device names
-- UI elements (screen, board, session, HDMI1)
-
----
-
-## 8. Output format (STRICT)
-
-Return ONLY valid JSON:
-
-{{
-  "tokens": [...],
-  "labels": [...]
-}}
-
----
-
-## 9. Example
+## 4. Multi-Intent Example
 
 ### Input
-
-Sentence:
-i want to exit the board mode close this whiteboard session
+Sentence: 
+switch the living room light to blue and set brightness to 80%
 
 Tokens:
-["i", "want", "to", "exit", "the", "board", "mode", "close", "this", "whiteboard", "session"]
-
----
+["switch", "the", "living", "room", "light", "to", "blue", "and", "set", "brightness", "to", "80", "%"]
 
 ### Output
-
 {{
-  "tokens": ["i", "want", "to", "exit", "the", "board", "mode", "close", "this", "whiteboard", "session"],
+  "tokens": ["switch", "the", "living", "room", "light", "to", "blue", "and", "set", "brightness", "to", "80", "%"],
   "labels": [
-    "B-SUB",
-    "B-PRED",
-    "I-PRED",
-    "I-PRED",
-    "B-OBJ",
-    "I-OBJ",
-    "I-OBJ",
-    "B-PRED",
-    "B-OBJ",
-    "I-OBJ",
-    "I-OBJ"
+    "B-PRED", "O", "B-LOC", "I-LOC", "B-OBJ", "O", "B-VAL", "O", "B-PRED", "B-OBJ", "O", "B-VAL", "I-VAL"
   ]
 }}
 
 ---
 
-## 10. Your Task
+## 5. Your Task
 
-Now perform BIO tagging for the following input:
+Perform BIO tagging for the following input to facilitate multi-function dispatching:
 
 Sentence:
 {sentence}
@@ -197,68 +100,45 @@ Tokens:
 Return ONLY the JSON output.
 """
 
-def load_datasets(tokenizer: BertTokenizer, dataset: Path) -> list[dict]:
-    DATASETS = []
+
+def load_datasets(dataset: Path) -> list[dict]:
+    data = []
     with dataset.open(encoding="utf-8") as f:
         for line in f:
-            line = line.strip()
-            if not line:
+            if not line.strip():
                 continue
-            DATASETS.append(json.loads(line))
-    return split_to_token(tokenizer, DATASETS)
+            item = json.loads(line)
+            item["tokens"] = item["input"].lower().split()
+            data.append(item)
+    return data
 
-def split_to_token(
-    tokenizer: BertTokenizer,
-    datasets: list[dict],
-    batch_size: int = 8
-) -> list[dict]:
+# def merge_data(datasets: list[dict], random_factor: int = 3) -> list[dict]:
+#     merged = []
+#     i = 0
+#     n = len(datasets)
 
-    for i in range(0, len(datasets), batch_size):
-        batch = datasets[i:i + batch_size]
-        texts = [x['input'] for x in batch]
-        encoded = tokenizer(
-            texts,
-            return_tensors='pt',
-            padding=True,
-            truncation=True
-        )
-        input_ids = encoded['input_ids']
+#     while i < n:
+#         k = random.randint(2, random_factor)
+#         batch = datasets[i:i + k]
+#         if not batch:
+#             break
+#         merged_input = " ".join(x["input"] for x in batch)
 
-        for idx, data in enumerate(batch):
-            ids = input_ids[idx]
-            tokens = tokenizer.convert_ids_to_tokens(ids)
-            tokens = [t for t in tokens if t not in ["[PAD]", "[SEP]", "[CLS]"]]
-            data['tokens'] = tokens
+#         merged_output = [x["output"] for x in batch]
 
-    return datasets
+#         merged_tokens = []
+#         for x in batch:
+#             merged_tokens.extend(x["tokens"])
 
-def merge_data(DATASETS: list[dict], random_factor: int = 3) -> list[dict]:
-    merged = []
-    i = 0
-    n = len(DATASETS)
+#         merged.append({
+#             "input": merged_input,
+#             "output": merged_output,
+#             "tokens": merged_tokens
+#         })
 
-    while i < n:
-        k = random.randint(2, random_factor)
-        batch = DATASETS[i:i + k]
-        if not batch:
-            break
-        merged_input = " ".join(x["input"] for x in batch)
+#         i += k
 
-        merged_output = [x["output"] for x in batch]
-
-        merged_tokens = []
-        for x in batch:
-            merged_tokens.extend(x["tokens"])
-
-        merged.append({
-            "input": merged_input,
-            "output": merged_output,
-            "tokens": merged_tokens
-        })
-
-        i += k
-
-    return merged
+#     return merged
 
 async def async_llm(client: AsyncClient, datasets: list[dict]):
     tasks = [
@@ -279,28 +159,45 @@ async def async_llm(client: AsyncClient, datasets: list[dict]):
     
 async def async_process(client: AsyncClient, dataset: dict) -> dict:
     async with semaphore:
-        messages = [
-            {
-                "role": "user", 
-                "content": PROMPT.format_map(
-                    {
-                        "sentence" : dataset['input'],
-                        "tokens": dataset['tokens']
-                    }
-                )
-            }
-        ]
-        response = await client.chat.completions.create(
-            model=os.environ['MODEL'],
-            messages=messages,
-                    response_format={
-                'type': 'json_object'
-            },
-            extra_body={"thinking": {"type": "disabled"}}
-        )
+        base_prompt = PROMPT.format_map({
+            "sentence": dataset['input'],
+            "tokens": dataset['tokens']
+        })
 
-        dataset['labels'] = json.loads(response.choices[0].message.content)['labels']
+        error_msg = ""
+        for _ in range(2):
+            messages = [{
+                "role": "user",
+                "content": base_prompt + error_msg
+            }]
+
+            response = await client.chat.completions.create(
+                model=os.environ['MODEL'],
+                messages=messages,
+                response_format={'type': 'json_object'},
+                extra_body={"thinking": {"type": "disabled"}}
+            )
+
+            try:
+                labels = json.loads(response.choices[0].message.content)['labels']
+            except Exception:
+                error_msg = "\nPrevious output was invalid JSON. Regenerate strictly."
+                continue
+
+            if len(labels) == len(dataset['tokens']):
+                dataset['labels'] = labels
+                return dataset
+
+            error_msg = (
+                f"\nPrevious output was invalid."
+                f"\nReason: label length {len(labels)} != token length {len(dataset['tokens'])}."
+                f"\nYou MUST output exactly {len(dataset['tokens'])} labels."
+            )
+
+        dataset['labels'] = None
+        dataset['error'] = "alignment_failed"
         return dataset
+
 
 
 def build_train(debug_mode: bool = False):
@@ -308,8 +205,10 @@ def build_train(debug_mode: bool = False):
     output = DATASETS / "train.json"
     clinet = AsyncClient(base_url=os.environ['BASE_URL'], api_key=os.environ['API_KEY'])
     tokenizer = BertTokenizer.from_pretrained(str(MODEL_PATH), fix_mistral_regex=True)
-    first_predata = load_datasets(tokenizer, datasets)
-    seconde_predata = merge_data(first_predata)
+    # first_predata = load_datasets(tokenizer, datasets)
+    first_predata = load_datasets(datasets)
+    # seconde_predata = merge_data(first_predata)
+    seconde_predata = first_predata
     final_predata = asyncio.run(async_llm(clinet, seconde_predata[:2] if debug_mode else seconde_predata))
     output.write_text(json.dumps(final_predata, indent=4, ensure_ascii=False), encoding="utf-8")
 
@@ -318,13 +217,15 @@ def build_test():
     output = DATASETS / "test.json"
     clinet = AsyncClient(base_url=os.environ['BASE_URL'], api_key=os.environ['API_KEY'])
     tokenizer = BertTokenizer.from_pretrained(str(MODEL_PATH), fix_mistral_regex=True)
-    first_predata = load_datasets(tokenizer, datasets)
-    seconde_predata = merge_data(first_predata)
+    # first_predata = load_datasets(tokenizer, datasets)
+    first_predata = load_datasets(datasets)
+    # seconde_predata = merge_data(first_predata)
+    seconde_predata = first_predata
     final_predata = asyncio.run(async_llm(clinet, seconde_predata))
     output.write_text(json.dumps(final_predata, indent=4, ensure_ascii=False), encoding="utf-8")
     
 
 if __name__ == "__main__":
     debug_mode = False
-    # build_train(debug_mode)
-    build_test()
+    build_train(debug_mode)
+    # build_test()
