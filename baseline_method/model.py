@@ -37,7 +37,17 @@ class BaseLineModelConfig:
         return 0.1 if self.is_train else 0.0
 
     # 自动选择运行设备
-    device: str = "cuda" if torch.cuda.is_available() else "cpu"
+    @property
+    def device(self) -> str:
+        # 1. 优先检查 Apple Silicon MPS 加速
+        if torch.backends.mps.is_available():
+            return "mps"
+        # 2. 其次检查 NVIDIA CUDA 加速
+        elif torch.cuda.is_available():
+            return "cuda"
+        # 3. 最后退回到 CPU
+        else:
+            return "cpu"
     
 
 

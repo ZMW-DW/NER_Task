@@ -1,5 +1,6 @@
 echo "📦 syncing environment..."
 uv sync
+source .venv/bin/activate
 
 echo "📥 downloading bert model..."
 modelscope download google-bert/bert-base-multilingual-uncased --include "*.json" --local_dir ./bert-base-multilingual-uncased

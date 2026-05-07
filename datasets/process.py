@@ -326,5 +326,5 @@ def build_test():
 
 if __name__ == "__main__":
     debug_mode = False
-    build_train(debug_mode)
+    # build_train(debug_mode)
     build_test()
